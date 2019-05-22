@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+    <!-- 引入 jquery文件 -->
+	　<script src="https://zhulezi.github.io/vegetation-notebook/search/js/jquery.js"></script>
+    <!-- ECharts单文件引入 -->
+    <script src="echarts.min.js"></script>
+	
+	
+	<style type="text/css">
+   
+   
+
+
+
+#header {
+    background-color:#27AE60;
+    color:white;
+    text-align:center;
+    padding:1px;
+}
+#footer {
+    background-color:#27AE60;
+    color:white;
+    clear:both;
+    text-align:center;
+	<!-- padding:5px;-->
+   
+}
+
+    </style >
+	
+	
+	
+	
+<body>
+   <title>内蒙古科属可视化-乐乐</title>
+   
+
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+
+<div id="header">
+<h1 style="color:white;"> 内蒙古植物科属可视化</h1>
+</div>
+
+<h1 style="text-align:center;color:green;">请找到下面的弗林克教授，然后点开</h1>
+
+
+
+
+    <div id="main" style="width:1400px;height:2000px"; ></div>
+
+
+<script type="text/javascript">
+var myChart = echarts.init(document.getElementById('main'));
+
+        myChart.showLoading();
+		
+		
+$.get('flare.json', function (data) {
+    myChart.hideLoading();
+
+    echarts.util.each(data.children, function (datum, index) {
+        index % 2 === 0 && (datum.collapsed = true);
+    });
+	
+	
+
+    myChart.setOption(option = {
+	   title : {
+        text: '内蒙古植物',
+        subtext: '科属可视化'
+    },
+    
+        tooltip: {
+            trigger: 'item',
+            triggerOn: 'mousemove'
+        },
+        series: [
+            {
+                type: 'tree',
+                initialTreeDepth: -1,
+                data: [data],
+                initialTreeDepth: -1,
+                data: [data],
+            itemStyle:{
+            color:"green",
+              borderColor:"green"
+          },
+
+
+            lineStyle:{color:"#CEB5E4",
+              width:2
+                },
+                top: '1%',
+                left: '13%',
+                bottom: '1%',
+                right: '15%',
+
+                symbolSize: 18,
+
+                label: {
+                    normal: {
+                        position: 'left',
+                        verticalAlign: 'middle',
+                        align: 'right',
+                        fontSize: 23
+                    }
+                },
+
+                leaves: {
+                    label: {
+                        normal: {
+                            position: 'right',
+                            verticalAlign: 'middle',
+                            align: 'left'
+                        }
+                    }
+                },
+
+                expandAndCollapse: true,
+                animationDuration: 550,
+                animationDurationUpdate: 750
+            }
+        ]
+    });
+});
+       
+    </script>
+
+
+<br>
+
+<div id="footer">
+
+ZhuLeZi
+</div>
+
+
+</body>
+	
+	
+	
+	
+	
+</head>
+</html>

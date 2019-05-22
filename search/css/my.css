@@ -1,0 +1,75 @@
+
+ 
+ 
+
+
+
+   
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+   color: white !important;
+   border: 1px solid #27AE60;
+   background-color: #27AE60;
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #27AE60),
+    color-stop(100%, #27AE60));
+   /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(top, #27AE60 0%, #27AE60 100%);
+   /* Chrome10+,Safari5.1+ */
+   background: -moz-linear-gradient(top, #27AE60 0%,#27AE60 100%);
+   /* FF3.6+ */
+   background: -ms-linear-gradient(top, #27AE60 0%, #27AE60 100%);
+   /* IE10+ */
+   background: -o-linear-gradient(top, #27AE60 0%, #27AE60 100%);
+   /* Opera 11.10+ */
+   background: linear-gradient(to bottom, #27AE60 0%, #27AE60 100%);
+   /* W3C */
+ }
+ 
+
+ 
+ .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+   outline: none;
+   background-color:#27AE60 ;
+
+ }
+ 
+ 
+
+
+    
+
+   
+ a{ color:#008900;text-decoration: none}
+ 
+#flo{float: right}
+
+img{height:50px}
+iframe{width:1250;height:3000;}
+
+th{background-color:#E6E6FF}
+  #bb
+{
+border:8px solid;
+border-radius:10px;
+border-color:#FF7440;} 
+
+#header {
+    background-color:#27AE60;
+    color:white;
+    text-align:center;
+    padding:1px;
+}
+#footer {
+    background-color:#27AE60;
+    color:white;
+    clear:both;
+    text-align:center;
+
+   
+}
+
+
+ .align_center {
+            text-align: center;
+        }
+
+	

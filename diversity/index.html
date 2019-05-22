@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>物种多样性计算-乐乐</title>
+
+<script language="javascript">
+function LN(n)
+{
+   return Math.log(n);
+}
+function html(array)
+{
+	for(var k in array)
+	{
+		var obj = document.getElementById(k);
+		if(obj)
+		{
+			obj.innerHTML = array[k];
+		}
+	}
+}
+function calculate(t)
+{
+  var data = t.value;
+  var data_arr = data.split(/[\s\n\f\t]+/g);
+	
+   var S = 0; 
+   var N = 0; 
+   
+   var H = 0; 
+   var D = 0;
+   var J = 0; 
+   
+   var Hmax = 0;
+   
+   var data_length = data_arr.length;
+   
+   var valid_data = [];
+  
+   
+   for(var i=0;i<data_length;i++){
+	   var va = Number(data_arr[i]);
+	   if(va>0){
+	     S++;
+		 N += va;
+		 valid_data.push(va);
+	   }else{
+	    
+	   }
+   } 
+   for(var i=0;i<valid_data.length;i++){
+	  var nN = parseFloat(valid_data[i]/N);
+	  H += nN*LN(nN);
+	  D +=nN*nN
+   }
+   if(S<=1)
+   {
+	   return;
+   }
+   H = -H;
+   D = 1-D;
+   Hmax = LN(S);
+   J = H/Hmax;
+   html({
+	   'data_valid':valid_data.join("&nbsp; "),
+	   'data_N':N.toFixed(4),
+	   'data_S':S,
+	   'data_H':H.toFixed(4),
+	   'data_D':D.toFixed(4),
+	   'data_J':J.toFixed(4)
+	   });
+}
+</script>
+
+
+
+<style type="text/css">
+
+
+
+#header {
+    background-color:#27AE60;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+
+#footer {
+    background-color:#27AE60;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+
+#section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+
+
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:400px;
+    float:left;
+    padding:5px;	      
+}
+</style>
+
+</head>
+
+
+
+
+
+<div id="header">
+<h1 style="color:white;"> 物种多样性计算</h1>
+<textarea rows="4"  border:solid 2px green cols="160" id="data" class="input-text" onkeyup="calculate(this) "  placeholder=请在这里输入数据 ></textarea>
+</div>
+
+
+
+
+
+<table id="nav"cellspacing="1">
+	<tr>
+		<td >参与计算的有效数据有:</td>
+		<td style="width:140px" id="data_valid"></td>
+	</tr>
+	<tr>
+		<td >总计（重要值、个体数）:</td>
+		<td  id="data_N"></td>
+	</tr>
+	<tr>
+		<td >物种丰富度（S）:</td>
+		<td  id="data_S"></td>
+	</tr>
+	<tr>
+		<td >香浓维纳指数（H）:</td>
+		<td id="data_H"></td>
+	</tr>
+	<tr>
+		<td >辛普森指数（D）:</td>
+		<td  id="data_D"></td>
+	</tr>
+	<tr>
+		<td >Pielou均匀度（J）:</td>
+		<td id="data_J"></td>
+	</tr>
+</table>
+
+
+
+</div>
+
+
+<div id="section">
+	
+<h3 style="color:green;"> 计算公式 </h3>
+<p>（点击公式，可获取word格式）</p>
+
+<a href="https://www.codecogs.com/latex/latextomathml.php?$$%20H=-\sum\limits_{i=1}^s{p_i\%20ln\%20p_i}%20$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$&space;H=-\sum\limits_{i=1}^s{p_i\&space;ln\&space;p_i}&space;$$" title="香浓维纳指数（H）" /></a>
+<p>
+<a href="https://www.codecogs.com/latex/latextomathml.php?$$D=1-\sum\limits_{i=1}^s{p_i^2}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$D=1-\sum\limits_{i=1}^s{p_i^2}&space;$$" title="辛普森指数（D）" /></a>
+</p>
+<a href="https://www.codecogs.com/latex/latextomathml.php?$$%20J=\frac{H}{H_{max}}%20$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$&space;J=\frac{H}{H_{max}}&space;$$" title="pielou均匀度指数（J）" /></a>
+</div>
+
+<div id="rec">
+
+<h3 style="color:green;"> 引用链接 </h3>
+<a href="http://db.kib.ac.cn/Default.aspx" target="_blank"><img src="http://db.kib.ac.cn/images/logo-w.png" width= "220" title="检索" /></a>
+<a href="http://www.cfh.ac.cn/BioBook/ParseNames.aspx" target="_blank"><img src="http://www.cfh.ac.cn/images/BioBookLogo.gif" width= "220" title="批量志书" />
+</a>
+<br>
+<h3 style="color:green;"> 经纬度转换 </h3>
+    <a href="http://www.ibiodiversity.net/BioGIS/" target="_blank"><h3 ><font color="green">生物多样性地理信息基础服务</font></h3></a>
+<table style="background-color:#eeeeee">
+		
+		<tr>
+			<td height="40px" style="padding-left:10px;">
+			<SPAN class=info3>度&nbsp;&nbsp;数:
+				<INPUT class=input id=input_du name=du style="WIDTH: 150px" value=113.211>&nbsp;&nbsp;
+				<INPUT class=but onClick="ChangeToDFM()" type=button value="转 换" name="">&nbsp;&nbsp;结果:
+				<SPAN id=calculated_DFM>113°12'39.6"</SPAN>
+ 			</SPAN>
+ 			</td>
+ 		</tr>
+ 		<tr><td height="40px" style="padding-left:10px; ">
+	    <SPAN class=info3>度分秒:
+		 <INPUT 
+		class=input id=input_dfm1 name=dfm1 style="WIDTH: 50px" value="113" >&nbsp;°&nbsp;<INPUT 
+		class=input id=input_dfm2 name=dfm2 style="WIDTH: 50px" value="12" >&nbsp;'&nbsp;<INPUT 
+		class=input id=input_dfm3 name=dfm3 style="WIDTH: 50px" value="39.6" >&nbsp;"&nbsp;&nbsp;
+		<INPUT class=but onClick="ChangeToDu()" type=button value="转 换" name="">&nbsp;&nbsp;结果:<SPAN id=calculated_du>113.211</SPAN>
+		 </SPAN>
+ 			</td></tr>
+	</table>
+</div>
+
+
+
+<script language="javascript">
+var tr = document.getElementsByTagName("tr");
+for(var k in tr)
+{
+	var current = tr[k];
+	current.onmouseover = function(){
+		var child = this.childNodes
+		for(var k in child)
+		{
+			if(child[k].style)
+			  child[k].style.backgroundColor='#88FC29';
+		}
+	}
+    current.onmouseout = function(){
+    	var child = this.childNodes;
+    	for(var k in child)
+    	{
+    		if(child[k].style)
+			 child[k].style.backgroundColor='#FFFFFF'
+        }
+	}
+}
+var textarea = document.getElementById("data");
+textarea.onmouseover = function(){
+	this.style.backgroundColor = '#E8F9A9';//text输入框滑过颜色
+    this.style.color = '#FF4040'
+}
+textarea.onmouseout = function(){
+	 this.style.backgroundColor = '#FFFFFF';
+	 this.style.color = '#242424';
+}
+</script>
+	<SCRIPT language=JavaScript type=text/javascript>
+	function ChangeToDFM()
+	{
+		var du = document.getElementById("input_du").value;
+		var str1 = du.split(".");
+		var du1 = str1[0];
+		var tp = "0."+str1[1]
+		var tp = String(tp*60);		//这里进行了强制类型转换
+		var str2 = tp.split(".");
+		var fen =str2[0];
+		tp = "0."+str2[1];
+		tp = tp*60;
+		var miao = tp;
+		document.getElementById("calculated_DFM").innerHTML = du1+"°"+fen+"'"+miao+"\"";
+	}
+	
+	function ChangeToDu()
+	{
+		var d = document.getElementById("input_dfm1").value;
+		var f = document.getElementById("input_dfm2").value;
+		var m = document.getElementById("input_dfm3").value;
+		
+		var f = parseFloat(f) + parseFloat(m/60);
+		var du = parseFloat(f/60) + parseFloat(d);
+		document.getElementById("calculated_du").innerHTML = du;
+	}
+	</script>
+
+
+<div style="overflow:hidden;width:100%;height:220px;">
+
+<div style="margin-left: -0px;margin-top: -200px;">
+<iframe  frameborder=0 src="http://db.kib.ac.cn/CNFlora/SearchEngine.aspx?q=%e5%a4%a7%e9%92%88%e8%8c%85" style="width:100%;height:480px;"></iframe>
+</div>
+
+</div>
+
+
+<div style="overflow:hidden;width:100%;height:100%;">
+
+<div style="margin:-200px 10px -150px">
+<iframe  frameborder=0 src="http://www.cfh.ac.cn/BioBook/ParseNames.aspx" style="width:100%;height:1100px;"></iframe>
+</div>
+
+</div>
+
+<div id="footer">
+
+ZhuLeZi
+</div>
+
+
+</html>

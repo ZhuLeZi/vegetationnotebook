@@ -1,0 +1,276 @@
+
+{
+ "name": "维管植物","symbolSize": [130, 180],
+                    "symbol": "image://img/logo.png",
+  
+"children": [
+ {"name": "蕨类植物","symbolSize": [70, 70],
+                    "symbol": "image://img/fern.png",
+  "children": [
+         {"name": "石松科", "value": 3938},
+      {"name": "卷柏科", "value": 3812},
+      {"name": "木贼科", "value": 6714},
+      {"name": "阴地蕨科", "value": 743},
+	  {"name": "阴地蕨科", "value": 743},
+	  {"name": "瓶尔小草科", "value": 743},
+	  {"name": "蕨科", "value": 743},
+	 {"name": "中国蕨科", "value": 743},
+	 {"name": "裸子蕨科", "value": 743},
+	 {"name": "蹄盖蕨科", "value": 743},
+	 {"name": "金星蕨科", "value": 743},
+	  {"name": "铁角蕨科", "value": 743},
+	   {"name": "球子蕨科", "value": 743},
+	    {"name": "岩蕨科", "value": 743},
+		 {"name": "鳞毛蕨科", "value": 743},
+		  {"name": "水龙骨科", "value": 743},
+		   {"name": "槲蕨科", "value": 743},
+		    {"name": "槐叶苹科", "value": 743}
+      ]
+ 
+ 
+ },
+ 
+ 
+ {"name": "裸子植物","symbolSize": [70, 70],
+                    "symbol": "image://img/pine.png",
+  "children": [
+      {"name": "松科", "value": 3534},
+      {"name": "柏科", "value": 5731},
+      {"name": "麻黄科", "value": 7840}
+     ]
+ 
+ },
+ 
+ 
+ 
+ {"name": "被子植物","symbolSize": [70, 70],
+                    "symbol": "image://img/beizi.png",
+ "children": [
+        {"name": "双子叶植物纲", "value": 3938,
+		"symbolSize": [70, 70],
+                    "symbol": "image://img/douke.png",
+		
+		
+		
+		"children": [
+      {"name": "离瓣花亚纲", "value": 3534,"symbolSize": [70, 70],
+                    "symbol": "image://img/flower.png",
+	  
+	  
+	  
+	    "children": [
+        {"name": "金栗兰科", "value": 3938},
+      {"name": "杨柳科", "value": 3812},
+      {"name": "胡桃科", "value": 6714},
+      {"name": "桦木科", "value": 743},
+	  {"name": "壳斗科", "value": 743,
+	  
+	  "symbolSize": [50, 50],
+                    "symbol": "image://img/qiaodouke.png"
+	  
+	  },
+	  {"name": "榆科", "value": 743},
+	  {"name": "桑科", "value": 743},
+	 {"name": "苋科", "value": 743},
+	 {"name": "栗米草科", "value": 743},
+	 {"name": "马齿苋科", "value": 743},
+	 {"name": "石竹科科", "value": 743},
+	  {"name": "睡莲科", "value": 743,
+	  "symbolSize": [50, 50],
+                    "symbol": "image://img/shuilianke.png"},
+	   {"name": "金鱼藻科", "value": 743},
+	    {"name": "芍药科", "value": 743},
+		 {"name": "毛茛科", "value": 743},
+		  {"name": "小檗科", "value": 743},
+		   {"name": "防己科", "value": 743},
+		    {"name": "五味子科", "value": 743},
+			{"name": "罂粟科", "value": 743},
+			{"name": "紫堇科", "value": 743},
+			{"name": "十字花科", "value": 743,
+			"symbolSize": [50, 50],
+                    "symbol": "image://img/shizihuake.png"
+			},
+			{"name": "茅膏菜科", "value": 743},
+			{"name": "景天科", "value": 743},
+			{"name": "蔷薇科", "value": 743,
+			"symbolSize": [50, 50],
+                    "symbol": "image://img/qiangweike.png"},
+			{"name": "虎耳草科", "value": 743},
+			
+			{"name": "豆科", "value": 743,
+			
+			"symbolSize": [50, 50],
+                    "symbol": "image://img/douke.png"},
+			
+			{"name": "牻牛儿苗科", "value": 743},
+			{"name": "亚麻科", "value": 743},
+			{"name": "白刺科", "value": 743},
+			{"name": "骆驼蓬科", "value": 743},
+			{"name": "酢浆草科", "value": 743,
+			"symbolSize": [50, 50],
+                    "symbol": "image://img/cujiangcaoke.png"},
+			{"name": "蒺藜科", "value": 743},
+			{"name": "芸香科", "value": 743},
+			{"name": "苦木科", "value": 743},
+			{"name": "远志科", "value": 743},
+			{"name": "大戟科", "value": 743},
+			{"name": "水马齿科", "value": 743},
+			{"name": "岩高兰科", "value": 743},
+			{"name": "槭树科", "value": 743,
+			"symbolSize": [50, 50],
+                    "symbol": "image://img/qishuke.png"
+			},
+			{"name": "无患子科", "value": 743},
+			{"name": "凤仙花科", "value": 743},
+			{"name": "鼠李科", "value": 743},
+			{"name": "葡萄科", "value": 743,
+			"symbolSize": [50, 50],
+                    "symbol": "image://img/putaoke.png"},
+			
+			
+			{"name": "藤黄科", "value": 743},
+			{"name": "沟繁缕科", "value": 743},
+			{"name": "瓣鳞花科", "value": 743},
+			{"name": "柽柳科", "value": 743},
+			{"name": "锦葵科", "value": 743,
+			
+			"symbolSize": [50, 50],
+                    "symbol": "image://img/jinkuike.png"
+			},
+			{"name": "半日花科", "value": 743},
+			{"name": "堇菜科", "value": 743},
+			{"name": "瑞香科", "value": 743},
+			{"name": "胡颓子科", "value": 743},
+			{"name": "猕猴桃科", "value": 743,
+			"symbolSize": [50, 50],
+                    "symbol": "image://img/mihoutaoke.png"},
+			{"name": "千屈菜科", "value": 743},
+			{"name": "菱科", "value": 743},
+			{"name": "柳叶菜科", "value": 743},
+			{"name": "小二仙草科", "value": 743},
+			{"name": "杉叶藻科", "value": 743},
+			{"name": "锁阳科", "value": 743},
+			{"name": "五加科", "value": 743},
+			{"name": "伞形科", "value": 743,
+			"symbolSize": [50, 50],
+                    "symbol": "image://img/sanxingke.png"},
+			{"name": "山茱萸科", "value": 743}
+			]
+			
+	  },
+      {"name": "合瓣花亚纲", "value": 5731,"symbolSize": [70, 70],
+                    "symbol": "image://img/qieke.png",
+	  
+				"children": [
+      {"name": "鹿蹄草科", "value": 3534},
+      {"name": "杜鹃花科", "value": 5731},
+      {"name": "报春花科", "value": 7840},
+	  {"name": "白花丹科", "value": 7840},
+	  {"name": "木犀科", "value": 7840},
+	  {"name": "马钱科", "value": 7840},
+	  {"name": "龙胆科", "value": 7840,
+	  
+	  "symbolSize": [50, 50],
+                    "symbol": "image://img/longdanke.png"},
+	  {"name": "睡菜科", "value": 7840},
+	  {"name": "夹竹桃科", "value": 7840},
+	  {"name": "萝摩科", "value": 7840},
+	  {"name": "旋花科", "value": 7840,
+	  "symbolSize": [50, 50],
+                    "symbol": "image://img/qieke.png"
+	  
+	  },
+	  {"name": "菟丝子科", "value": 7840},
+	  {"name": "花荵科", "value": 7840},
+	  {"name": "紫草科", "value": 7840},
+	  {"name": "马鞭草科", "value": 7840},
+	  {"name": "唇形科", "value": 7840},
+	  {"name": "茄科", "value": 7840,
+	  "symbolSize": [50, 50],
+                    "symbol": "image://img/qieke2.png"
+	  
+	  },
+	  {"name": "玄参科", "value": 7840},
+	  {"name": "紫葳科", "value": 7840},
+	  {"name": "胡麻科", "value": 7840},
+	  {"name": "列当科", "value": 7840},
+	  {"name": "狸藻科", "value": 7840},
+	  {"name": "透骨草科", "value": 7840},
+	  {"name": "车前科", "value": 7840},
+	  {"name": "茜草科", "value": 7840},
+	  {"name": "忍冬科", "value": 7840},
+	  {"name": "五福花科", "value": 7840},
+	  {"name": "败酱科", "value": 7840},
+	  {"name": "川续断科", "value": 7840},
+	  {"name": "葫芦科", "value": 7840,
+	  "symbolSize": [50, 50],
+                    "symbol": "image://img/huluke.png"
+	  
+	  },
+	  {"name": "桔梗科", "value": 7840},
+	  {"name": "菊科", "value": 7840}
+				
+     ]
+	  
+	  
+	  
+	  
+	  
+	  }     
+     ]
+		
+		
+		},
+      {"name": "单子叶植物纲", "value": 3812,
+	  "symbolSize": [60, 60],
+                    "symbol": "image://img/danziye.png",
+	  
+	  "children": [
+      {"name": "香蒲科", "value": 3534},
+      {"name": "黑三棱科", "value": 5731},
+      {"name": "眼子菜科", "value": 7840},
+	  {"name": "角果藻科", "value": 7840},
+	  {"name": "水鳖科", "value": 7840},
+	  {"name": "水麦冬科", "value": 7840},
+	  {"name": "泽泻科", "value": 7840},
+	  {"name": "花蔺科", "value": 7840},
+	  {"name": "禾本科", "value": 7840,
+	  "symbolSize": [50, 50],
+                    "symbol": "image://img/danziye.png"
+	  },
+	  {"name": "莎草科", "value": 7840},
+	  {"name": "菖蒲科", "value": 7840},
+	  {"name": "天南星科", "value": 7840,
+	  "symbolSize": [50, 50],
+                    "symbol": "image://img/tiannanxingke.png"},
+	  {"name": "浮萍科", "value": 7840},
+	  {"name": "谷精草科", "value": 7840},
+	  {"name": "鸭跖草科", "value": 7840},
+	  {"name": "雨久花科", "value": 7840},
+	  {"name": "灯心草科", "value": 7840},
+	  {"name": "百合科", "value": 7840,
+	  "symbolSize": [50, 50],
+                    "symbol": "image://img/mono.png"
+	  
+	  
+	  },
+	  {"name": "薯蓣科", "value": 7840},
+	  {"name": "鸢尾科", "value": 7840},
+	  {"name": "兰科", "value": 7840,
+	  "symbolSize": [50, 50],
+                    "symbol": "image://img/lanke.png"}  
+     ]
+	  
+	  
+	  }
+      ]
+ 
+ }
+ 
+ 
+ 
+ 
+
+]
+  
+	 }

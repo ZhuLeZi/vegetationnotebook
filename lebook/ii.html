@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>6 原始数据，仅仅按照重要值确定群从和群从组名称，获得每个样地的群从名。i的大小是指，大于i的重要值进入群从命名。 | lebook文档</title>
+  <meta name="description" content="6 原始数据，仅仅按照重要值确定群从和群从组名称，获得每个样地的群从名。i的大小是指，大于i的重要值进入群从命名。 | lebook文档">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="6 原始数据，仅仅按照重要值确定群从和群从组名称，获得每个样地的群从名。i的大小是指，大于i的重要值进入群从命名。 | lebook文档" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="6 原始数据，仅仅按照重要值确定群从和群从组名称，获得每个样地的群从名。i的大小是指，大于i的重要值进入群从命名。 | lebook文档" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 原始数据，仅仅按照重要值确定群从和群从组名称，获得每个样地的群从名。i的大小是指，大于i的重要值进入群从命名。 | lebook文档" />
+  
+  <meta name="twitter:description" content="6 原始数据，仅仅按照重要值确定群从和群从组名称，获得每个样地的群从名。i的大小是指，大于i的重要值进入群从命名。 | lebook文档" />
+  
+
+<meta name="author" content="ZhuLeZi">
+
+
+<meta name="date" content="2019-05-21">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="section-5.html">
+<link rel="next" href="section-7.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="libs/viz-0.3/viz.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/grViz-binding-1.0.0/grViz.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">lebook</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 前言</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#section-1.1"><i class="fa fa-check"></i><b>1.1</b> 出发点</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#section-1.2"><i class="fa fa-check"></i><b>1.2</b> 安装</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="section-2.html"><a href="section-2.html"><i class="fa fa-check"></i><b>2</b> 数据</a><ul>
+<li class="chapter" data-level="2.1" data-path="section-2.html"><a href="section-2.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 样方</a></li>
+<li class="chapter" data-level="2.2" data-path="section-2.html"><a href="section-2.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 物种信息</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="section-2.html"><a href="section-2.html#section-2.2.1"><i class="fa fa-check"></i><b>2.2.1</b> 内蒙植物名录</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="section-3.html"><a href="section-3.html"><i class="fa fa-check"></i><b>3</b> 数据预处理</a><ul>
+<li class="chapter" data-level="3.1" data-path="section-3.html"><a href="section-3.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 计算重要值</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="section-4.html"><a href="section-4.html"><i class="fa fa-check"></i><b>4</b> 区系</a><ul>
+<li class="chapter" data-level="4.1" data-path="section-4.html"><a href="section-4.html#section-4.1"><i class="fa fa-check"></i><b>4.1</b> 科属组成</a></li>
+<li class="chapter" data-level="4.2" data-path="section-4.html"><a href="section-4.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 生活型</a></li>
+<li class="chapter" data-level="4.3" data-path="section-4.html"><a href="section-4.html#section-4.3"><i class="fa fa-check"></i><b>4.3</b> 水分生态型</a></li>
+<li class="chapter" data-level="4.4" data-path="section-4.html"><a href="section-4.html#section-4.4"><i class="fa fa-check"></i><b>4.4</b> 区系地理</a></li>
+<li class="chapter" data-level="4.5" data-path="section-4.html"><a href="section-4.html#section-4.5"><i class="fa fa-check"></i><b>4.5</b> 恒有度</a></li>
+<li class="chapter" data-level="4.6" data-path="section-4.html"><a href="section-4.html#section-4.6"><i class="fa fa-check"></i><b>4.6</b> 重要值等级</a></li>
+<li class="chapter" data-level="4.7" data-path="section-4.html"><a href="section-4.html#sar"><i class="fa fa-check"></i><b>4.7</b> SAR种面积曲线</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="section-5.html"><a href="section-5.html"><i class="fa fa-check"></i><b>5</b> 群落</a></li>
+<li class="chapter" data-level="6" data-path="ii.html"><a href="ii.html"><i class="fa fa-check"></i><b>6</b> 原始数据，仅仅按照重要值确定群从和群从组名称，获得每个样地的群从名。i的大小是指，大于i的重要值进入群从命名。</a><ul>
+<li class="chapter" data-level="6.1" data-path="ii.html"><a href="ii.html#section-6.1"><i class="fa fa-check"></i><b>6.1</b> 群从划分表</a></li>
+<li class="chapter" data-level="6.2" data-path="ii.html"><a href="ii.html#section-6.2"><i class="fa fa-check"></i><b>6.2</b> 群从名,写出群从的中文名，拉丁名，和所含样地号</a></li>
+<li class="chapter" data-level="6.3" data-path="ii.html"><a href="ii.html#section-6.3"><i class="fa fa-check"></i><b>6.3</b> 按群从组统计数量特征</a></li>
+<li class="chapter" data-level="6.4" data-path="ii.html"><a href="ii.html#list"><i class="fa fa-check"></i><b>6.4</b> 群从组的物种组成，返回list</a></li>
+<li class="chapter" data-level="6.5" data-path="ii.html"><a href="ii.html#section-6.5"><i class="fa fa-check"></i><b>6.5</b> 按群从统计数量特征</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="ii.html"><a href="ii.html#section-6.5.1"><i class="fa fa-check"></i><b>6.5.1</b> 群落结构分层图解</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="ii.html"><a href="ii.html#section-6.6"><i class="fa fa-check"></i><b>6.6</b> 群从物种组成描述</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="section-7.html"><a href="section-7.html"><i class="fa fa-check"></i><b>7</b> 批量输出</a></li>
+<li class="chapter" data-level="8" data-path="section-8.html"><a href="section-8.html"><i class="fa fa-check"></i><b>8</b> 环境</a><ul>
+<li class="chapter" data-level="8.1" data-path="section-8.html"><a href="section-8.html#section-8.1"><i class="fa fa-check"></i><b>8.1</b> 经纬度格式转化</a></li>
+<li class="chapter" data-level="8.2" data-path="section-8.html"><a href="section-8.html#wc"><i class="fa fa-check"></i><b>8.2</b> WC气候因子提取</a></li>
+<li class="chapter" data-level="8.3" data-path="section-8.html"><a href="section-8.html#spocc"><i class="fa fa-check"></i><b>8.3</b> spocc包</a></li>
+<li class="chapter" data-level="8.4" data-path="section-8.html"><a href="section-8.html#section-8.4"><i class="fa fa-check"></i><b>8.4</b> 根据经纬度，解析行政地址</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="section-9.html"><a href="section-9.html"><i class="fa fa-check"></i><b>9</b> 多样性计算</a><ul>
+<li class="chapter" data-level="9.1" data-path="section-9.html"><a href="section-9.html#section-9.1"><i class="fa fa-check"></i><b>9.1</b> α多样性</a></li>
+<li class="chapter" data-level="9.2" data-path="section-9.html"><a href="section-9.html#section-9.2"><i class="fa fa-check"></i><b>9.2</b> 多样性与环境因子之间的相关性</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="section-10.html"><a href="section-10.html"><i class="fa fa-check"></i><b>10</b> 种间关系</a><ul>
+<li class="chapter" data-level="10.1" data-path="section-10.html"><a href="section-10.html#spaa"><i class="fa fa-check"></i><b>10.1</b> SPAA包</a></li>
+<li class="chapter" data-level="10.2" data-path="section-10.html"><a href="section-10.html#section-10.2"><i class="fa fa-check"></i><b>10.2</b> 种间关系数据筛选</a></li>
+<li class="chapter" data-level="10.3" data-path="section-10.html"><a href="section-10.html#section-10.3"><i class="fa fa-check"></i><b>10.3</b> 种间关系可视化</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="section-11.html"><a href="section-11.html"><i class="fa fa-check"></i><b>11</b> 绘制地图</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/ZhuLeZi/leplant" target="blank">github lebook</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">lebook文档</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ii" class="section level1">
+<h1><span class="header-section-number">6</span> 原始数据，仅仅按照重要值确定群从和群从组名称，获得每个样地的群从名。i的大小是指，大于i的重要值进入群从命名。</h1>
+<ul>
+<li>%&gt;%zwqcz()，可能会出错。因为i的大小设为0.1时，样方内仅有一个物种满足要求。</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">QCNAME</span>(com,cp,<span class="dt">i=</span><span class="fl">0.1</span>)<span class="op">%&gt;%</span><span class="kw">zwqc</span>()</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+qc
+</th>
+<th style="text-align:left;">
+ld
+</th>
+<th style="text-align:right;">
+site
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+羊草-克氏针茅群从组
+</td>
+<td style="text-align:left;">
+Ass. Leymus chinensis-Sibbaldia adpressa
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+羊草-芨芨草群从组
+</td>
+<td style="text-align:left;">
+Ass. Leymus chinensis-Achnatherum splendens
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+</tbody>
+</table>
+<p>群落划分的基础数据，n为每一层片最多描述的物种数，iv为层片临界值，大于iv的层片的优势种，命名时添加至群从名 <strong>基础数据</strong></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cs&lt;-<span class="kw">QLYF</span>(com,cp,<span class="dt">n=</span><span class="dv">5</span>,<span class="dt">iv=</span><span class="fl">0.1</span>)</code></pre></div>
+<p>如果基础数据包括盖度信息，可根据盖度进行层片决策</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cs&lt;-<span class="kw">QLYF2</span>(com,cp,herb,<span class="dt">n=</span><span class="dv">5</span>,<span class="dt">cover=</span><span class="dv">10</span>)</code></pre></div>
+<div id="section-6.1" class="section level2">
+<h2><span class="header-section-number">6.1</span> 群从划分表</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">QCTABLE2</span>(cs,<span class="dt">out=</span><span class="st">&#39;table&#39;</span>)</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+群从组
+</th>
+<th style="text-align:left;">
+群从
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Ⅰ.克氏针茅-根茎型禾草群从组
+</td>
+<td style="text-align:left;">
+Ⅰ-1克氏针茅-羊草-冷蒿群从
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ⅱ.羊草-丛生禾草群从组
+</td>
+<td style="text-align:left;">
+Ⅱ-1羊草-芨芨草-银灰旋花-多根葱群从
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="section-6.2" class="section level2">
+<h2><span class="header-section-number">6.2</span> 群从名,写出群从的中文名，拉丁名，和所含样地号</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">QCTABLE2</span>(cs,<span class="dt">out=</span><span class="st">&#39;mm&#39;</span>)</code></pre></div>
+<pre><code>## [1] &quot;Ⅰ-1 克氏针茅-羊草-冷蒿群从 Ass. Sibbaldia adpressa-Leymus chinensis-Artemisia frigida (1)&quot;                                
+## [2] &quot;Ⅱ-1 羊草-芨芨草-银灰旋花-多根葱群从 Ass. Leymus chinensis-Achnatherum splendens-Convolvulus ammannii-Allium senescens (2)&quot;</code></pre>
+</div>
+<div id="section-6.3" class="section level2">
+<h2><span class="header-section-number">6.3</span> 按群从组统计数量特征</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">MS_QCZ</span>(plantcom<span class="op">$</span>comm,cs)</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+群从组
+</th>
+<th style="text-align:right;">
+样地数
+</th>
+<th style="text-align:right;">
+群从数
+</th>
+<th style="text-align:right;">
+共记载物种数
+</th>
+<th style="text-align:left;">
+每平方米物种饱和度
+</th>
+<th style="text-align:right;">
+平均物种数
+</th>
+<th style="text-align:left;">
+每平方米群落总盖度
+</th>
+<th style="text-align:right;">
+平均盖度
+</th>
+<th style="text-align:left;">
+每平方米群落生物量
+</th>
+<th style="text-align:right;">
+平均生物量
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+克氏针茅-根茎型禾草群从组
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+11 ~ 21
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+17 ~ 21
+</td>
+<td style="text-align:right;">
+19.30
+</td>
+<td style="text-align:left;">
+54.21 ~ 87.82
+</td>
+<td style="text-align:right;">
+73.46
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+羊草-丛生禾草群从组
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+3 ~ 6
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+22 ~ 25
+</td>
+<td style="text-align:right;">
+23.64
+</td>
+<td style="text-align:left;">
+35.3 ~ 53.97
+</td>
+<td style="text-align:right;">
+41.98
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="list" class="section level2">
+<h2><span class="header-section-number">6.4</span> 群从组的物种组成，返回list</h2>
+<p>其结果，可以用区系分析的相关函数，进行科属组成、生活型、和区系地理成分分析</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">QCZSP</span>(plantcom<span class="op">$</span>comm,cs,sp)</code></pre></div>
+</div>
+<div id="section-6.5" class="section level2">
+<h2><span class="header-section-number">6.5</span> 按群从统计数量特征</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">MS_QC</span>(plantcom<span class="op">$</span>comm,cs)</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+群从
+</th>
+<th style="text-align:right;">
+共记载物种数
+</th>
+<th style="text-align:left;">
+每平方米物种饱和度
+</th>
+<th style="text-align:right;">
+平均物种数
+</th>
+<th style="text-align:left;">
+每平方米群落总盖度
+</th>
+<th style="text-align:right;">
+平均盖度
+</th>
+<th style="text-align:left;">
+每平方米群落生物量
+</th>
+<th style="text-align:right;">
+平均生物量
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+克氏针茅-羊草-冷蒿群从
+</td>
+<td style="text-align:left;">
+克氏针茅-羊草-冷蒿群从
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+11 ~ 21
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+17 ~ 21
+</td>
+<td style="text-align:right;">
+19.30
+</td>
+<td style="text-align:left;">
+54.21 ~ 87.82
+</td>
+<td style="text-align:right;">
+73.46
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+羊草-芨芨草-银灰旋花-多根葱群从
+</td>
+<td style="text-align:left;">
+羊草-芨芨草-银灰旋花-多根葱群从
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+3 ~ 6
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+22 ~ 25
+</td>
+<td style="text-align:right;">
+23.64
+</td>
+<td style="text-align:left;">
+35.3 ~ 53.97
+</td>
+<td style="text-align:right;">
+41.98
+</td>
+</tr>
+</tbody>
+</table>
+<div id="section-6.5.1" class="section level3">
+<h3><span class="header-section-number">6.5.1</span> 群落结构分层图解</h3>
+<ul>
+<li>以样方为单位 如果原始数据包含盖度信息，可以对每个群从进行群落分层图解，cover表示大于此盖度都限制，su是控制x轴最大 值，默认100</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(yc)
+cp2&lt;-<span class="kw">NMLIST</span>(yc)<span class="op">%&gt;%</span><span class="kw">CPHF</span>()
+f&lt;-<span class="kw">fc</span>(yc,cp2)
+
+f1&lt;-<span class="kw">subset</span>(f,site<span class="op">==</span><span class="dv">1</span>)
+<span class="kw">fcplot</span>(f1,<span class="dt">cover=</span><span class="dv">5</span>,<span class="dt">su=</span><span class="dv">70</span>)</code></pre></div>
+<p><img src="lebook_files/figure-html/unnamed-chunk-43-1.png" width="672" /></p>
+<p>包含总盖度</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">f_&lt;-<span class="kw">fc2</span>(yc,cp2)
+f_<span class="dv">1</span>&lt;-<span class="kw">subset</span>(f_,site<span class="op">==</span><span class="dv">1</span>)
+<span class="kw">fcplot</span>(f_<span class="dv">1</span>,<span class="dt">cover=</span><span class="dv">5</span>)</code></pre></div>
+<p><img src="lebook_files/figure-html/unnamed-chunk-44-1.png" width="672" /></p>
+</div>
+</div>
+<div id="section-6.6" class="section level2">
+<h2><span class="header-section-number">6.6</span> 群从物种组成描述</h2>
+<ul>
+<li>仅包含层片累积重要值、优势种、和主要组成部分</li>
+<li>是按照样方排列</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">CPMS</span>(cs,<span class="dt">by=</span><span class="st">&quot;cp&quot;</span>)</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+.
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+杂类草层片，累计重要值为0.389，记有14种，优势种为克氏针茅，重要值为0.132，还有阿尔泰狗娃花、双齿葱、银灰旋花、狼毒等;根茎型禾草层片，累计重要值为0.278，仅优势种为羊草，重要值为0.278;半灌木层片，累计重要值为0.102，记有2种，优势种为冷蒿，重要值为0.098，还有百里香等
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+根茎型禾草层片，累计重要值为0.477，仅优势种为羊草，重要值为0.477;丛生禾草层片，累计重要值为0.171，仅优势种为芨芨草，重要值为0.171;杂类草层片，累计重要值为0.149，记有3种，优势种为银灰旋花，重要值为0.087，还有大萼委陵菜、皱黄芪等;葱类植物层片，累计重要值为0.134，记有2种，优势种为多根葱，重要值为0.084，还有细叶葱等
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">CPMS</span>(cs,<span class="dt">by=</span><span class="st">&quot;zw&quot;</span>)</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+.
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+葱类植物，累计重要值为0.081，记有3种，有细叶葱、蒙古韭、山韭;一二年生草本，累计重要值为0.08，记有4种，有猪毛蒿、刺沙蓬、角蒿、平车前;丛生小禾草，累计重要值为0.07，记有2种，有糙隐子草、冰草
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+一二年生草本，累计重要值为0.044，仅有栉叶蒿;丛生小禾草，累计重要值为0.025，仅有寸草苔
+</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>如果要在层片描述内加入层片高度和盖度</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ccs&lt;-<span class="kw">QLYF</span>(<span class="kw">HERBIV</span>(yc),cp2,<span class="dt">n=</span><span class="dv">5</span>,<span class="dt">iv=</span><span class="fl">0.1</span>)</code></pre></div>
+<pre><code>## Warning: attributes are not identical across measure variables; they will
+## be dropped</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ms_cs&lt;-<span class="kw">CS2</span>(f,ccs) <span class="co"># 生成具有层片高度和盖度的描述信息表</span>
+<span class="kw">CPMS</span>(ms_cs,<span class="dt">by=</span><span class="st">&quot;cp2&quot;</span>)</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+.
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+根茎型禾草层片，累计重要值为0.654，记有3种，平均高度43.64cm，盖度48.27%，优势种为羊草，重要值为0.616，还有芦苇、拂子茅等;杂类草层片，累计重要值为0.176，记有9种，平均高度21.68cm，盖度8.53%，优势种为野艾蒿，重要值为0.04，还有马蔺、针灯心草、蒲公英、车前等
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+根茎型禾草层片，累计重要值为0.654，记有3种，平均高度43.64cm，盖度48.27%，优势种为羊草，重要值为0.616，还有芦苇、拂子茅等;杂类草层片，累计重要值为0.176，记有9种，平均高度21.68cm，盖度8.53%，优势种为野艾蒿，重要值为0.04，还有马蔺、针灯心草、蒲公英、车前等
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="section-5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="section-7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["lebook.pdf", "lebook.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -74,11 +74,11 @@ $(document).ready(function() {
    var table= $('#example').DataTable({       data:data,    
         // "bJQueryUI" : true,    
             "bSort" : true, 		
-	        "aLengthMenu" : [5,10,20],
+	        "aLengthMenu" : [10,20,50],
 		   "iDisplayLength" : 10,
 		    "bInfo" : false,
-		"scrollY":        "2000px",//固定展示高度
-        "scrollCollapse": true,//固定表头
+		"scrollY":        "1900px",
+        "scrollCollapse": true,
         
         
    columns:[
@@ -187,10 +187,15 @@ $(document).ready(function() {
 
 <div id="header">
 <h2 style="color:white;"> 内蒙古植物检索数据库</h2>
+<div style="background-color:#DEEBF7">
+<a href="https://zhulezi.github.io/vegetationnotebook/lebook/">文档lebook</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+<a href="https://zhulezi.github.io/vegetationnotebook/diversity/">多样性计算</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+<a href="https://zhulezi.github.io/vegetationnotebook/tree/">分类树</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+</div>
+
 </div>
 
   <!--table-->
-   <br>
   <div id="bb" >
  <table id="example" class="display" cellspacing="0" width="99%">
         <thead>
@@ -200,7 +205,7 @@ $(document).ready(function() {
                 <th><img src="img/logo.png" alt="FOC"><img></th>
                 <th>检索表页码</th>
                 <th>分布区页码</th>
-				<th id=" pd" style="width:10px"></th>
+				<th style="width:10px"></th>
             </tr>
         </thead>
  
@@ -209,15 +214,10 @@ $(document).ready(function() {
  </div>
  
 
- 
-
-
-<br>
-
 <div id="footer">
 
 版权所有：内蒙古大学生态与环境学院 | 联系邮箱：zhulezl@sina.com
- 
+ </div>
  </body>
  
  </html>

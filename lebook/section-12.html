@@ -5,21 +5,21 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>9 多样性计算 | lebook文档</title>
-  <meta name="description" content="9 多样性计算 | lebook文档">
+  <title>12 物种分布 | lebook文档</title>
+  <meta name="description" content="12 物种分布 | lebook文档">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="9 多样性计算 | lebook文档" />
+  <meta property="og:title" content="12 物种分布 | lebook文档" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="9 多样性计算 | lebook文档" />
+  <meta property="og:description" content="12 物种分布 | lebook文档" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9 多样性计算 | lebook文档" />
+  <meta name="twitter:title" content="12 物种分布 | lebook文档" />
   
-  <meta name="twitter:description" content="9 多样性计算 | lebook文档" />
+  <meta name="twitter:description" content="12 物种分布 | lebook文档" />
   
 
 <meta name="author" content="ZhuLeZi">
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="section-8.html">
-<link rel="next" href="section-10.html">
+<link rel="prev" href="section-11.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -186,544 +186,675 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="section-9" class="section level1">
-<h1><span class="header-section-number">9</span> 多样性计算</h1>
-<div id="section-9.1" class="section level2">
-<h2><span class="header-section-number">9.1</span> α多样性</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">DYX</span>(com)</code></pre></div>
-<table>
-<thead>
-<tr>
-<th style="text-align:right;">
-Shannon Wiener
-</th>
-<th style="text-align:right;">
-Simpson
-</th>
-<th style="text-align:right;">
-pielou
-</th>
-<th style="text-align:right;">
-S
-</th>
-<th style="text-align:right;">
-site
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right;">
-2.622514258
-</td>
-<td style="text-align:right;">
-0.8798394839
-</td>
-<td style="text-align:right;">
-0.8049222077
-</td>
-<td style="text-align:right;">
-26
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-1.670559563
-</td>
-<td style="text-align:right;">
-0.7218682731
-</td>
-<td style="text-align:right;">
-0.7603044224
-</td>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:right;">
-2
-</td>
-</tr>
-</tbody>
-</table>
-<p>多样性指数之间的相关性,by=“pearson” or “spearman”</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">CORB</span>(mtcars,<span class="dt">by=</span><span class="st">&quot;pearson&quot;</span>)</code></pre></div>
-<table>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-mpg
-</th>
-<th style="text-align:left;">
-cyl
-</th>
-<th style="text-align:left;">
-disp
-</th>
-<th style="text-align:left;">
-hp
-</th>
-<th style="text-align:left;">
-drat
-</th>
-<th style="text-align:left;">
-wt
-</th>
-<th style="text-align:left;">
-qsec
-</th>
-<th style="text-align:left;">
-vs
-</th>
-<th style="text-align:left;">
-am
-</th>
-<th style="text-align:left;">
-gear
-</th>
-<th style="text-align:left;">
-carb
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-mpg
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
--0.852**
-</td>
-<td style="text-align:left;">
--0.848**
-</td>
-<td style="text-align:left;">
--0.776**
-</td>
-<td style="text-align:left;">
-0.681**
-</td>
-<td style="text-align:left;">
--0.868**
-</td>
-<td style="text-align:left;">
-0.419*
-</td>
-<td style="text-align:left;">
-0.664**
-</td>
-<td style="text-align:left;">
-0.6**
-</td>
-<td style="text-align:left;">
-0.48**
-</td>
-<td style="text-align:left;">
--0.551**
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-cyl
-</td>
-<td style="text-align:left;">
--0.852**
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-0.902**
-</td>
-<td style="text-align:left;">
-0.832**
-</td>
-<td style="text-align:left;">
--0.7**
-</td>
-<td style="text-align:left;">
-0.782**
-</td>
-<td style="text-align:left;">
--0.591**
-</td>
-<td style="text-align:left;">
--0.811**
-</td>
-<td style="text-align:left;">
--0.523**
-</td>
-<td style="text-align:left;">
--0.493**
-</td>
-<td style="text-align:left;">
-0.527**
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-disp
-</td>
-<td style="text-align:left;">
--0.848**
-</td>
-<td style="text-align:left;">
-0.902**
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-0.791**
-</td>
-<td style="text-align:left;">
--0.71**
-</td>
-<td style="text-align:left;">
-0.888**
-</td>
-<td style="text-align:left;">
--0.434*
-</td>
-<td style="text-align:left;">
--0.71**
-</td>
-<td style="text-align:left;">
--0.591**
-</td>
-<td style="text-align:left;">
--0.556**
-</td>
-<td style="text-align:left;">
-0.395*
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-hp
-</td>
-<td style="text-align:left;">
--0.776**
-</td>
-<td style="text-align:left;">
-0.832**
-</td>
-<td style="text-align:left;">
-0.791**
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
--0.449**
-</td>
-<td style="text-align:left;">
-0.659**
-</td>
-<td style="text-align:left;">
--0.708**
-</td>
-<td style="text-align:left;">
--0.723**
-</td>
-<td style="text-align:left;">
--0.243
-</td>
-<td style="text-align:left;">
--0.126
-</td>
-<td style="text-align:left;">
-0.75**
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-drat
-</td>
-<td style="text-align:left;">
-0.681**
-</td>
-<td style="text-align:left;">
--0.7**
-</td>
-<td style="text-align:left;">
--0.71**
-</td>
-<td style="text-align:left;">
--0.449**
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
--0.712**
-</td>
-<td style="text-align:left;">
-0.091
-</td>
-<td style="text-align:left;">
-0.44*
-</td>
-<td style="text-align:left;">
-0.713**
-</td>
-<td style="text-align:left;">
-0.7**
-</td>
-<td style="text-align:left;">
--0.091
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wt
-</td>
-<td style="text-align:left;">
--0.868**
-</td>
-<td style="text-align:left;">
-0.782**
-</td>
-<td style="text-align:left;">
-0.888**
-</td>
-<td style="text-align:left;">
-0.659**
-</td>
-<td style="text-align:left;">
--0.712**
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
--0.175
-</td>
-<td style="text-align:left;">
--0.555**
-</td>
-<td style="text-align:left;">
--0.692**
-</td>
-<td style="text-align:left;">
--0.583**
-</td>
-<td style="text-align:left;">
-0.428*
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-qsec
-</td>
-<td style="text-align:left;">
-0.419*
-</td>
-<td style="text-align:left;">
--0.591**
-</td>
-<td style="text-align:left;">
--0.434*
-</td>
-<td style="text-align:left;">
--0.708**
-</td>
-<td style="text-align:left;">
-0.091
-</td>
-<td style="text-align:left;">
--0.175
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-0.745**
-</td>
-<td style="text-align:left;">
--0.23
-</td>
-<td style="text-align:left;">
--0.213
-</td>
-<td style="text-align:left;">
--0.656**
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-vs
-</td>
-<td style="text-align:left;">
-0.664**
-</td>
-<td style="text-align:left;">
--0.811**
-</td>
-<td style="text-align:left;">
--0.71**
-</td>
-<td style="text-align:left;">
--0.723**
-</td>
-<td style="text-align:left;">
-0.44*
-</td>
-<td style="text-align:left;">
--0.555**
-</td>
-<td style="text-align:left;">
-0.745**
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-0.168
-</td>
-<td style="text-align:left;">
-0.206
-</td>
-<td style="text-align:left;">
--0.57**
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-am
-</td>
-<td style="text-align:left;">
-0.6**
-</td>
-<td style="text-align:left;">
--0.523**
-</td>
-<td style="text-align:left;">
--0.591**
-</td>
-<td style="text-align:left;">
--0.243
-</td>
-<td style="text-align:left;">
-0.713**
-</td>
-<td style="text-align:left;">
--0.692**
-</td>
-<td style="text-align:left;">
--0.23
-</td>
-<td style="text-align:left;">
-0.168
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-0.794**
-</td>
-<td style="text-align:left;">
-0.058
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-gear
-</td>
-<td style="text-align:left;">
-0.48**
-</td>
-<td style="text-align:left;">
--0.493**
-</td>
-<td style="text-align:left;">
--0.556**
-</td>
-<td style="text-align:left;">
--0.126
-</td>
-<td style="text-align:left;">
-0.7**
-</td>
-<td style="text-align:left;">
--0.583**
-</td>
-<td style="text-align:left;">
--0.213
-</td>
-<td style="text-align:left;">
-0.206
-</td>
-<td style="text-align:left;">
-0.794**
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-0.274
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-carb
-</td>
-<td style="text-align:left;">
--0.551**
-</td>
-<td style="text-align:left;">
-0.527**
-</td>
-<td style="text-align:left;">
-0.395*
-</td>
-<td style="text-align:left;">
-0.75**
-</td>
-<td style="text-align:left;">
--0.091
-</td>
-<td style="text-align:left;">
-0.428*
-</td>
-<td style="text-align:left;">
--0.656**
-</td>
-<td style="text-align:left;">
--0.57**
-</td>
-<td style="text-align:left;">
-0.058
-</td>
-<td style="text-align:left;">
-0.274
-</td>
-<td style="text-align:left;">
-1
-</td>
-</tr>
-</tbody>
-</table>
+<div id="section-12" class="section level1">
+<h1><span class="header-section-number">12</span> 物种分布</h1>
+<div id="gbif" class="section level2">
+<h2><span class="header-section-number">12.1</span> GBIF物种分布</h2>
+<p><a href="https://rsh249.github.io/bioinformatics/primary_biodiv.html">spocc</a></p>
+<p><a href="http://blog.sciencenet.cn/blog-267448-1047946.html">赖江山博文</a></p>
 </div>
-<div id="section-9.2" class="section level2">
-<h2><span class="header-section-number">9.2</span> 多样性与环境因子之间的相关性</h2>
+<div id="cvh" class="section level2">
+<h2><span class="header-section-number">12.2</span> CVH物种分布</h2>
 <ul>
-<li>线性回归分析,<a href="https://github.com/PhDMeiwp/basicTrendline">basicTrendline</a>支持常规的几种线性回归模型，并会直接加上R<sup>2</sup>、P值、回归方程</li>
+<li>如果你只需要简单的省级或县级分布请不建议使用函数</li>
+<li>在使用函数之前，先去CVH的网站看一看它有几份标本，如果小于15条，仅有一页。函数会报错。那你就用自己可爱的小手手一份一份的点开一下好啦？</li>
 </ul>
-<p><a href="http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/112-pca-principal-component-analysis-essentials/">PCA绘图</a></p>
-<p><a href="https://rpkgs.datanovia.com/factoextra/">PCA</a></p>
-<p><a href="https://www.datanovia.com/en/product/practical-guide-to-cluster-analysis-in-r/?url=/5-bookadvisor/17-practical-guide-to-cluster-analysis-in-r/">cluster</a></p>
-</div>
-<div id="section-9.3" class="section level2">
-<h2><span class="header-section-number">9.3</span> β多样性</h2>
-<p>可参考vegan包进行计算，进行RDA，Mantel检验、以及空间自相关分析</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">lb&lt;-<span class="kw">CVH</span>(<span class="st">&quot;术叶合耳菊&quot;</span>)</code></pre></div>
+<pre><code>## Warning in function_list[[i]](value): NAs introduced by coercion</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">lb</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+馆.条形码
+</th>
+<th style="text-align:left;">
+学名
+</th>
+<th style="text-align:left;">
+中文名
+</th>
+<th style="text-align:left;">
+采集人.号
+</th>
+<th style="text-align:right;">
+采集年份
+</th>
+<th style="text-align:left;">
+省名
+</th>
+<th style="text-align:left;">
+查看
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+HIMC 0030222
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+赵一之 4132
+</td>
+<td style="text-align:right;">
+1988
+</td>
+<td style="text-align:left;">
+内蒙古自治区
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PE 02034139
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+陈又生等 141344
+</td>
+<td style="text-align:right;">
+20140804
+</td>
+<td style="text-align:left;">
+内蒙古自治区
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WUK 0432773
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+徐养鹏，于兆英 2172
+</td>
+<td style="text-align:right;">
+1981
+</td>
+<td style="text-align:left;">
+内蒙古
+</td>
+<td style="text-align:left;">
+详细
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WUK 0449940
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+徐养鹏，于兆英 2172
+</td>
+<td style="text-align:right;">
+1981
+</td>
+<td style="text-align:left;">
+内蒙古
+</td>
+<td style="text-align:left;">
+详细
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WUK 0449939
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+于兆英 882
+</td>
+<td style="text-align:right;">
+1980
+</td>
+<td style="text-align:left;">
+内蒙古
+</td>
+<td style="text-align:left;">
+详细
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WUK 0449941
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+于兆英 391
+</td>
+<td style="text-align:right;">
+1980
+</td>
+<td style="text-align:left;">
+宁夏
+</td>
+<td style="text-align:left;">
+详细
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WUK 0449944
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+于兆英 276
+</td>
+<td style="text-align:right;">
+1980
+</td>
+<td style="text-align:left;">
+宁夏
+</td>
+<td style="text-align:left;">
+详细
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PE 02035595
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+陈又生等 141344
+</td>
+<td style="text-align:right;">
+2014
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PE 02035594
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+陈又生等 141344
+</td>
+<td style="text-align:right;">
+2014
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PE 02034773
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+陈又生等 1410749
+</td>
+<td style="text-align:right;">
+20140731
+</td>
+<td style="text-align:left;">
+内蒙古自治区
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HIMC 0030228
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+赵一之 132
+</td>
+<td style="text-align:right;">
+1991
+</td>
+<td style="text-align:left;">
+内蒙古自治区
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HIMC 0030227
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+赵一之 132
+</td>
+<td style="text-align:right;">
+1991
+</td>
+<td style="text-align:left;">
+内蒙古自治区
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HIMC 0030226
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+赵一之 3144
+</td>
+<td style="text-align:right;">
+1988
+</td>
+<td style="text-align:left;">
+内蒙古自治区
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HIMC 0030225
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+雷喜亭 216
+</td>
+<td style="text-align:right;">
+1984
+</td>
+<td style="text-align:left;">
+内蒙古自治区
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HIMC 0030224
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+赵一之 9154
+</td>
+<td style="text-align:right;">
+1988
+</td>
+<td style="text-align:left;">
+内蒙古自治区
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HIMC 0030222
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+赵一之 4132
+</td>
+<td style="text-align:right;">
+1988
+</td>
+<td style="text-align:left;">
+内蒙古自治区
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PE 02034139
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+陈又生等 141344
+</td>
+<td style="text-align:right;">
+20140804
+</td>
+<td style="text-align:left;">
+内蒙古自治区
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HIMC 0030223
+</td>
+<td style="text-align:left;">
+Synotis atractylidifolia
+</td>
+<td style="text-align:left;">
+术叶合耳菊
+</td>
+<td style="text-align:left;">
+雷喜亭
+</td>
+<td style="text-align:right;">
+1984
+</td>
+<td style="text-align:left;">
+内蒙古自治区
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>将标本的馆/条形码作为变量名。函数将会为你检索，采集人/号；采集日期、采集地</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">SPIN</span>(lb[,<span class="dv">1</span>])</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+V1
+</th>
+<th style="text-align:left;">
+V2
+</th>
+<th style="text-align:left;">
+V3
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+赵一之 4132
+</td>
+<td style="text-align:left;">
+19880706
+</td>
+<td style="text-align:left;">
+中国 内蒙古自治区 巴彦淖尔盟 磴口县 狼山庙沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+陈又生等 141344
+</td>
+<td style="text-align:left;">
+20140804
+</td>
+<td style="text-align:left;">
+中国 内蒙古自治区 土默特右旗 九峰山枣沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+徐养鹏，于兆英 2172
+</td>
+<td style="text-align:left;">
+1981/09/03
+</td>
+<td style="text-align:left;">
+中国 内蒙 阿拉善左旗 贺兰山北哈拉乌沟头道沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+徐养鹏，于兆英 2172
+</td>
+<td style="text-align:left;">
+1981/09/03
+</td>
+<td style="text-align:left;">
+中国 内蒙 阿拉善左旗 贺兰山北哈拉乌沟头道沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+于兆英 882
+</td>
+<td style="text-align:left;">
+1980/09/15
+</td>
+<td style="text-align:left;">
+中国 内蒙 阿拉善左旗 哈拉乌沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+于兆英 391
+</td>
+<td style="text-align:left;">
+1980/08/17
+</td>
+<td style="text-align:left;">
+中国 宁夏 银川 小口子
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+于兆英 276
+</td>
+<td style="text-align:left;">
+1980/08/02
+</td>
+<td style="text-align:left;">
+中国 宁夏 贺兰 贺兰山五道塘
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+陈又生等 141344
+</td>
+<td style="text-align:left;">
+20140804
+</td>
+<td style="text-align:left;">
+中国 九峰山枣沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+陈又生等 141344
+</td>
+<td style="text-align:left;">
+20140804
+</td>
+<td style="text-align:left;">
+中国 九峰山枣沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+陈又生等 1410749
+</td>
+<td style="text-align:left;">
+20140731
+</td>
+<td style="text-align:left;">
+中国 内蒙古自治区 阿拉善左旗 贺兰山南寺沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+赵一之 132
+</td>
+<td style="text-align:left;">
+19910806
+</td>
+<td style="text-align:left;">
+中国 内蒙古自治区 巴彦淖尔盟 乌拉特前旗 乌拉山大坝沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+赵一之 132
+</td>
+<td style="text-align:left;">
+19910806
+</td>
+<td style="text-align:left;">
+中国 内蒙古自治区 巴彦淖尔盟 乌拉特前旗 乌拉山大坝沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+赵一之 3144
+</td>
+<td style="text-align:left;">
+19880706
+</td>
+<td style="text-align:left;">
+中国 内蒙古自治区 巴彦淖尔盟 磴口县 狼山庙沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+雷喜亭 216
+</td>
+<td style="text-align:left;">
+19840704
+</td>
+<td style="text-align:left;">
+中国 内蒙古自治区 阿拉善盟 阿拉善左旗 贺兰山
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+赵一之 9154
+</td>
+<td style="text-align:left;">
+19880706
+</td>
+<td style="text-align:left;">
+中国 内蒙古自治区 巴彦淖尔盟 磴口县 狼山庙沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+赵一之 4132
+</td>
+<td style="text-align:left;">
+19880706
+</td>
+<td style="text-align:left;">
+中国 内蒙古自治区 巴彦淖尔盟 磴口县 狼山庙沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+陈又生等 141344
+</td>
+<td style="text-align:left;">
+20140804
+</td>
+<td style="text-align:left;">
+中国 内蒙古自治区 土默特右旗 九峰山枣沟
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+雷喜亭
+</td>
+<td style="text-align:left;">
+19840000
+</td>
+<td style="text-align:left;">
+中国 内蒙古自治区 阿拉善盟 阿拉善左旗 贺兰山
+</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><a href="section-8.html#baidu">根据地名解析经纬度</a></li>
+</ul>
 
 </div>
 </div>
@@ -732,8 +863,8 @@ carb
           </div>
         </div>
       </div>
-<a href="section-8.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="section-10.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="section-11.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

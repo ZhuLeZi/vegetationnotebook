@@ -8,7 +8,7 @@ function format ( d ) {
 	 
 	
 	 if(d.bz == "")
-	 { return '<table id="flo" cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;" >'+
+	 { return '<table id="flo" cellpadding="5" cellspacing="0" border="0" style="padding-left:20px;" >'+
         '<tr>'+
             '<td>生长型:</td>'+
             '<td>'+d.a+
@@ -48,38 +48,95 @@ function format ( d ) {
             '<td>种区系地理分布:</td>'+
             '<td>'+d.d+'</td>'+
 		'</tr>'+
+		'<tr>'+
+            '<td>分布信息:</td>'+
+          '<td>'+
+		  '<div style="overflow:hidden;width:700px;height:35px;">'+
+			'<div style="margin:-2px -10px -0px -80px;">'+
+			//上、右、下、左
 		
+			'<iframe src="http://frps.iplant.cn/getspdescorsub.ashx?l='+d.ld+'&t=a" ></iframe>'+
+			'</div>'+
+			'</div>'+
+             '<div style="overflow:hidden;width:800px;height:35px;">'+
+			'<div style="margin:-2px -0px -0px -80px;">'+
+			//上、右、下、左
+		
+			'<iframe src="http://frps.iplant.cn/getspdescorsub.ashx?l='+d.ld+'&t=b" ></iframe>'+
+			'</div>'+
+			'</div>'+
+             '<div style="overflow:hidden;width:800px;height:35px;">'+
+			'<div style="margin:-2px -0px -0px -80px;">'+
+			//上、右、下、左
+		
+			'<iframe src="http://frps.iplant.cn/getspdescorsub.ashx?l='+d.ld+'&t=c" ></iframe>'+
+			'</div>'+
+			'</div>'+
+			 '<div style="overflow:hidden;width:800px;height:35px;">'+
+			'<div style="margin:-2px -0px -0px -80px;">'+
+			//上、右、下、左
+		
+			'<iframe src="http://frps.iplant.cn/getspdescorsub.ashx?l='+d.ld+'&t=d" ></iframe>'+
+			'</div>'+
+			'</div>'+'</td>'+
+		  
+		'</tr>'+
 		
 		'<tr>'+
-            '<td>标本分布:</td>'+
+            '<td>标本:</td>'+
 		
             '<td>'+
 			'<a href="http://www.cvh.ac.cn/search?searchtype=2&sp='+d.sp+'&seg=蒙'+ '" target="_black">'+ '内蒙CVH' + '</a>' +
 			
 			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
 			
+			'<a href="http://kun.kingdonia.org/search/list/f/1/t/1/id/0/?name='   +d.ld+ '" target="_black">'+ 'KUN' + '</a>' +
+			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
+			
 			'<a href="http://www.cvh.ac.cn/search/'   +d.ld+'?n=1'+ '" target="_black">'+ 'CVH' + '</a>' +
 			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
 			'<a href="https://www.gbif.org/occurrence/search?q=' +d.ld+'" target="_black">'+ 'GBIF' + '</a>' +
 			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
-			'<a href="http://ppbc.iplant.cn/list?latin='+d.ld+ '" target="_black">'+ 'PPBC' + '</a>' +
+			
 		
-			'<div style="overflow:hidden;width:800px;height:35px;">'+
-			'<div style="margin:-0px -0px -0px -2px;">'+
-			//上、右、下、左
-		
-			'<iframe src="http://frps.iplant.cn/getspdescorsub.ashx?l='+d.ld+'&t=a" ></iframe>'+
-			'</div>'+
-			'</div>'+
-
-
+			
 			'</td>'+	
 		'</tr>'+
-		////
+		
 		'<tr>'+
-            '<td>志书:</td>'+
+            '<td>名称索引:</td>'+
+	
             '<td>'+
-			'<a href="http://www.bhl-china.org/data/index.php?name='   +d.ld+ '" target="_black">'+ '综合志书检索' + '</a>' +
+			'<a href="http://www.ipni.org/ipni/simplePlantNameSearch.do?find_wholeName='+d.ld+ '&output_format=normal&query_type=by_query&back_page=query_ipni.html" target="_black">'+ 'IPNI' + '</a>' +
+			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
+			'<a href="http://www.theplantlist.org/tpl1.1/search?q='+d.ld+ '" target="_black">'+ 'TPL' + '</a>' +
+			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
+			'<a href="http://www.tropicos.org/NameSearch.aspx?name='+d.ld+ '&commonname=" target="_black">'+ 'Tropicos' + '</a>' +
+			'</td>'+
+					
+				
+		'</tr>'+
+		
+		'<tr>'+
+            '<td>图片:</td>'+
+            '<td>'+
+			'<a href="http://ppbc.iplant.cn/list?latin='+d.ld+ '" target="_black">'+ 'PPBC' + '</a>' +
+			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
+			
+			'</td>'+
+					
+		'</tr>'+
+		
+			'<tr>'+
+            '<td>国外志书:</td>'+
+            '<td>'+
+			'<a href="http://www.efloras.org/browse.aspx?flora_id=0&name_str='   +d.ld+ '&btnSearch=Search" target="_black">'+ 'eflora' + '</a>' +
+			'</td>'+
+		'</tr>'+
+		'<tr>'+
+            '<td>中国志书:</td>'+
+            '<td>'+
+			'<a href="http://www.bhl-china.org/data/index.php?name='   +d.ld+ '" target="_black">'+ 'BHL' + '</a>' +
 			'</td>'+
 		'</tr>'+
 		
@@ -89,15 +146,19 @@ function format ( d ) {
 			'<a href="http://www.iplant.cn/info/'   +d.ld+ '" target="_black">'+ '综合iplant' + '</a>' +
 			'</td>'+
 		'</tr>'+
-		
 	'</table>'+
-	'<textarea  rows="4" cols="9" style="text-orientation: sideways; writing-mode: vertical-lr; font-family: Menksoft2012;direction: ltr; ">'
-+d.mw+ '</textarea>'+
-'<div style="overflow:hidden;width:250px;height:230px;">'+
-'<div  style="margin:-250px -630px -280px -25px;">'+
+	
+	
+'<div  style="float:right;overflow:hidden;width:250px;height:500px;">'+
+'<div  style="margin:-250px -400px -280px -25px;">'+
 			'<iframe src="http://www.iplant.cn/info/'+d.ld+'"></iframe>'+
 '</div>'+
-'</div>'
+'</div>'+
+'<div style="float:left">'+
+	'<textarea  rows="2" cols="9" style=" writing-mode: vertical-lr; font-family: Menksoft2012;direction: ltr; ">'
++d.mw+ '</textarea>'+
+	'</div>'
+
 	 };
 	 
 	 if(d.bz == "蕨属")

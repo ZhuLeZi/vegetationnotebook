@@ -162,18 +162,30 @@ function format ( d ) {
 	 };
 	 
 	 if(d.bz == "蕨属")
-	 { return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+	 { return '<table id="flo1" cellpadding="5" cellspacing="0" border="0" style="padding-left:0px;">'+
         '<tr>'+
             '<td>中国（内蒙）种数:</td>'+
             '<td>'+d.d+'</td>'+
         '</tr>'+
+		'<tr>'+
+		'<td>🔎</td>'+
+		'<td>'+
+		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'</td>'+
+	'</tr>'+
 		
-    '</table>';
+    '</table>'+
+	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
+
+			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+
+'</div>'
+	;
 	 
 	 };
 	 
 	 if(d.bz == "属")
-	 { return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+	 { return '<table id="flo1" cellpadding="5" cellspacing="0" border="0" style="padding-left:0px;">'+
         '<tr>'+
             '<td>分布区类型:</td>'+
             '<td>'+d.a+'</td>'+
@@ -198,24 +210,47 @@ function format ( d ) {
             '<td>综论页码:</td>'+
             '<td>'+d.y+'</td>'+
 		'</tr>'+
-    '</table>';
+		'<tr>'+
+		'<td>🔎</td>'+
+		'<td>'+
+		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'</td>'+
+	'</tr>'+
+    '</table>'+
+	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
+
+			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+
+'</div>'
+	;
 	 
 	 };
 	 
 	  if(d.bz == "科")
-	 { return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+	 { return '<table id="flo1" cellpadding="5" cellspacing="0" border="0" style="padding-left:0px;">'+
         '<tr>'+
             '<td>分布区类型:</td>'+
             '<td>'+d.a+'</td>'+
         '</tr>'+
+		'<tr>'+
+		'<td>🔎</td>'+
+		'<td>'+
+		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'</td>'+
+	'</tr>'+
 		
-    '</table>';
+    '</table>'+
+	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
+
+			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+
+'</div>';
 	 
 	 };
 	 
 	 
 	  if(d.bz == "栽培")
-	 { return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+	 { return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:10px;">'+
         '<tr>'+
             '<td>备注:</td>'+
             '<td>'+d.bz+'</td>'+
@@ -224,8 +259,31 @@ function format ( d ) {
     '</table>';
 	 
 	 };
+	 
+	  if(d.bz == "门")
+	 { return '<table id="flo1" cellpadding="5" cellspacing="0" border="0" style="padding-left:0px;">'+
+        '<tr>'+
+            '<td>备注:</td>'+
+            '<td>'+d.bz+'</td>'+
+        '</tr>'+
+		'<tr>'+
+		'<td>🔎</td>'+
+		'<td>'+
+		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'</td>'+
+	'</tr>'+
+		
+    '</table>'+
+	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
+
+			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+
+'</div>';
+	 
+	 }; 
+	 
 	 if(d.bz == "栽培"||"入侵")
-	 { return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+	 { return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:10px;">'+
         '<tr>'+
             '<td>备注:</td>'+
             '<td>'+d.bz+'</td>'+

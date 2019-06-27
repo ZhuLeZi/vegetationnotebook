@@ -6,6 +6,7 @@
 
    
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+	
    color: white !important;
    border: 1px solid #27AE60;
    background-color: #27AE60;
@@ -27,6 +28,7 @@
 
  
  .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+	
    outline: none;
    background-color:#27AE60 ;
 
@@ -39,12 +41,13 @@
 
    
  a{ color:#008900;text-decoration: none}
- 
+ #b1{background-color:#E6E6FF}
 #flo{float: right}
-
-img{height:50px}
+#flo1{float: left}
+img{height:30px}
 iframe{width:1250;height:3000;}
 
+#ifa{ width:1050;overflow-x:auto; overflow-y:auto;}
 th{background-color:#E6E6FF}
   #bb{
 border:8px solid;
@@ -52,6 +55,7 @@ border-radius:10px;
 border-color:#FF7440;} 
 
 #header {
+	line-height:10px;
     background-color:#27AE60;
     color:white;
     text-align:center;

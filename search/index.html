@@ -74,8 +74,8 @@ $(document).ready(function() {
    var table= $('#example').DataTable({       data:data,    
         // "bJQueryUI" : true,    
             "bSort" : true, 		
-	        "aLengthMenu" : [10,20,50],
-		   "iDisplayLength" : 10,
+	        "aLengthMenu" : [1,2,5,10],
+		   "iDisplayLength" : 12,
 		    "bInfo" : false,
 		"scrollY":        "1900px",
         "scrollCollapse": true,
@@ -111,7 +111,7 @@ $(document).ready(function() {
        "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
        "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
        "sInfoPostFix": "",
-       "sSearch": "搜索:",
+       "sSearch": "🔎",
        "sUrl": "",
        "sEmptyTable": "表中数据为空",
        "sLoadingRecords": "载入中...",
@@ -186,21 +186,20 @@ $(document).ready(function() {
 
 
 <div id="header">
-<div>
+
+<p style="text-align:center">
+
+<font size="6"  style="font-weight:800;color:white;" > 内蒙古植物检索数据库</font>&nbsp;&nbsp
+<a id="b1" href="https://zhulezi.github.io/vegetationnotebook/" target="_black" >说明</a>&nbsp;&nbsp
+<a id="b1" href="https://zhulezi.github.io/vegetationnotebook/lebook/" target="_black" >文档lebook</a>&nbsp;&nbsp
+<a id="b1" href="https://zhulezi.github.io/vegetationnotebook/diversity/" target="_black" >多样性计算</a>&nbsp;&nbsp
+<a id="b1" href="https://zhulezi.github.io/vegetationnotebook/tree/" target="_black">分类树</a>&nbsp;&nbsp;&nbsp;&nbsp
 <a href="https://zhulezi.github.io/vegetationnotebook/lebook/" target="_black">
-<img  src="img/treezl.png" alt="leplant"  align="right" ></img>
+<img  src="img/treezl.png" alt="leplant"  ></img>
 </a>
-<h2 style="color:white;" > 内蒙古植物检索数据库</h2>
+</p>
 </div>
 
-<div style="background-color:#DEEBF7">
-<a href="https://zhulezi.github.io/vegetationnotebook/" target="_black" >说明</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-<a href="https://zhulezi.github.io/vegetationnotebook/lebook/" target="_black" >文档lebook</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-<a href="https://zhulezi.github.io/vegetationnotebook/diversity/" target="_black" >多样性计算</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-<a href="https://zhulezi.github.io/vegetationnotebook/tree/" target="_black">分类树</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-</div>
-
-</div>
 
   <!--table-->
   <div id="bb" >

@@ -170,14 +170,28 @@ function format ( d ) {
 		'<tr>'+
 		'<td>🔎</td>'+
 		'<td>'+
-		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'<a href="../display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
 		'</td>'+
 	'</tr>'+
+		'<tr>'+
+             '<td>'+
+			 '<a href="http://www.theplantlist.org/tpl1.1/search?q='+d.ld+ '" target="_black">'+ 'TPL' + '</a>' +
+			
+			'</td>'+
+	
+            '<td>'+
+			'<a href="http://www.ipni.org/ipni/simplePlantNameSearch.do?find_wholeName='+d.ld+ '&output_format=normal&query_type=by_query&back_page=query_ipni.html" target="_black">'+ 'IPNI' + '</a>' +
+			
+			'</td>'+
+					
+				
+		'</tr>'+
+	
 		
     '</table>'+
 	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
 
-			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+			'<iframe  id="ifa" src="../display/'+d.sp+'.html"></iframe>'+
 
 '</div>'
 	;
@@ -213,13 +227,27 @@ function format ( d ) {
 		'<tr>'+
 		'<td>🔎</td>'+
 		'<td>'+
-		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'<a href="../display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
 		'</td>'+
-	'</tr>'+
+	'</tr>'+	
+		'<tr>'+
+             '<td>'+
+			 '<a href="http://www.theplantlist.org/tpl1.1/search?q='+d.ld+ '" target="_black">'+ 'TPL' + '</a>' +
+			
+			'</td>'+
+	
+            '<td>'+
+			'<a href="http://www.ipni.org/ipni/simplePlantNameSearch.do?find_wholeName='+d.ld+ '&output_format=normal&query_type=by_query&back_page=query_ipni.html" target="_black">'+ 'IPNI' + '</a>' +
+			
+			'</td>'+
+					
+				
+		'</tr>'+
+	
     '</table>'+
 	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
 
-			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+			'<iframe  id="ifa" src="../display/'+d.sp+'.html"></iframe>'+
 
 '</div>'
 	;
@@ -235,14 +263,28 @@ function format ( d ) {
 		'<tr>'+
 		'<td>🔎</td>'+
 		'<td>'+
-		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'<a href="../display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
 		'</td>'+
-	'</tr>'+
+	'</tr>'+	
+	'<tr>'+
+             '<td>'+
+			 '<a href="http://www.theplantlist.org/tpl1.1/search?q='+d.ld+ '" target="_black">'+ 'TPL' + '</a>' +
+			
+			'</td>'+
+	
+            '<td>'+
+			'<a href="http://www.ipni.org/ipni/simplePlantNameSearch.do?find_wholeName='+d.ld+ '&output_format=normal&query_type=by_query&back_page=query_ipni.html" target="_black">'+ 'IPNI' + '</a>' +
+			
+			'</td>'+
+					
+				
+		'</tr>'+
+	
 		
     '</table>'+
 	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
 
-			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+			'<iframe  id="ifa" src="../display/'+d.sp+'.html"></iframe>'+
 
 '</div>';
 	 
@@ -269,14 +311,14 @@ function format ( d ) {
 		'<tr>'+
 		'<td>🔎</td>'+
 		'<td>'+
-		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'<a href="../display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
 		'</td>'+
 	'</tr>'+
 		
     '</table>'+
 	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
 
-			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+			'<iframe  id="ifa" src="../display/'+d.sp+'.html"></iframe>'+
 
 '</div>';
 	 
@@ -334,6 +376,30 @@ function fot ( d ) {
 
 
 	 };
+	 if(d.bz == "属"|d.bz == "科")
+	 { return '<table   cellpadding="0" cellspacing="0" border="0" >'+
+        '<tr>'+
+            '<td>'+
+			'<div style="overflow:hidden;width:670px;height:570px;">'+
+			'<div style="margin:-423px -110px -480px -260px;">'+
+			//上、右、下、左
+			'<div style="margin-left: -200px;margin-top: -400px;margin-top: -400px">'+
+	        '<iframe src="http://www.cvh.ac.cn/searchmap/'+d.ld+'?n=1" ></iframe>'+
+			'</div>'+
+			'</div>'+
+			'</td>'+
+
+
+		'</tr>'+
+		
+
+    '</table>';
+	 
+
+
+
+	 };
+	
 
 };
 

@@ -8024,7 +8024,7 @@ var data =
   },
   {
     "sp": "假苍耳属",
-    "ld": "Cyclachaena",
+    "ld": "Iva",
     "js": "240、248",
     "fb": "",
     "a": "",

@@ -41,6 +41,9 @@
 
    
  a{ color:#008900;text-decoration: none}
+ a:hover{
+	 color:#FF7440;font-weight:bold
+ }
  #b1{font-size:22px}
 #flo{float: right}
 #flo1{float: left}

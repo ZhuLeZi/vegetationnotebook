@@ -1,8 +1,24 @@
 
 
   h2{color:green} 
- a{ background-color:green ;color:white;text-decoration: none}
+ a{ background-color:green ;color:white;text-decoration: none;;font-size:18px}
+ a:hover{
+	 color:#FF7440;font-weight:bold
+ }
  
-font{color:red}
+ :target{
+	 background-color:#FF7440
+ }
+font{color:#FF7440}
 
 	
+#footer {
+    background-color:;
+    color:#999;
+    clear:both;
+    text-align:center;
+}
+
+
+
+body{margin: 10 10 5 20;}

@@ -1,9 +1,11 @@
 
 
   h2{color:green} 
- a{ background-color:green ;color:white;text-decoration: none;;font-size:18px}
+ a{ background-color:green ;color:white;text-decoration: none;font-size:17px;
+ border: solid 2px green;padding: 3px 10px;
+ }
  a:hover{
-	 color:#FF7440;font-weight:bold
+	background-color:#FF7440;font-weight:bold
  }
  
  :target{

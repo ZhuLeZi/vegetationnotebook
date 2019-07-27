@@ -52,18 +52,21 @@ tr.shown td.picture {
 
 @font-face {
       font-family: 'Menksoft2012';
-      src: url(font/Menksoft2012.ttf);
-     /* src: url(Menksoft2012.eot);
-      src: url(Menksoft2012.woff) format('woff');
-      */
+      src: url('font/Menksoft2012.ttf');
+      src: url('font/Menksoft2012.eot') format('truetype'),
+            url('font/Menksoft2012.woff') format('woff');
+      
     }
+	
+	
+	div,body{margin: 0; padding: 0;}   
+	
+	textarea{writing-mode: vertical-lr; font-family:Menksoft2012; direction: ltr;}
    </style>
 
-	<style type="text/css">       
-div,body{margin: 0; padding: 0;}    
-</style>
 
-<script src="js/function2.js"></script>
+
+<script src="js/function.js"></script>
 
  
   <script type="text/javascript">
@@ -73,13 +76,20 @@ div,body{margin: 0; padding: 0;}
 $(document).ready(function() {
    var table= $('#example').DataTable({       data:data,    
         // "bJQueryUI" : true,    
+		
+			 "fnPreDrawCallback": function( oSettings ) {
+        $('.dataTables_filter input').attr({'name':'search','placeholder': '请输入植物名'});//提示
+    },
+		
+		
+		"ordering":true, //排序总开关
             "bSort" : true, 		
 	        "aLengthMenu" : [1,2,5,10],
 		   "iDisplayLength" : 12,
 		    "bInfo" : false,
 		"scrollY":        "1900px",
         "scrollCollapse": true,
-        
+         "bLengthChange": false ,  //关掉页码filter
         
    columns:[
 	   
@@ -90,10 +100,10 @@ $(document).ready(function() {
 		 
 		  },
 		
-		   {"data" : 'sp',render: function(data, type, row) { return '<a href="http://frps.iplant.cn/frps?id='+data+'" target="_black">' + data + '</a>';} },
+		   {"orderable": false, "data" : 'sp',render: function(data, type, row) { return '<a href="http://frps.iplant.cn/frps?id='+data+'" target="_black">' + data + '</a>';} },
 		   {"data" : 'ld',render: function(data, type, row) { return '<a href="http://foc.iplant.cn/search.aspx?k='   +data+'&id=1'+ '" target="_black">'+ data + '</a>';}},
-           {"data": 'js',"className":"align_center"}, 
-		   {"data": 'fb'},
+           {"orderable": false, "data": 'js',"className":"align_center"}, 
+		   {"orderable": false, "data": 'fb'},
       
       { "class":"picture",
 		   "orderable": false, 
@@ -107,7 +117,7 @@ $(document).ready(function() {
        
        "sLengthMenu": "显示 _MENU_ 项结果",
        "sZeroRecords": "没有匹配结果",
-       "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+        "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
        "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
        "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
        "sInfoPostFix": "",
@@ -181,19 +191,37 @@ $(document).ready(function() {
   
 
   <body>
- <title>🌱内蒙古植物检索</title>
+ <title>内蒙古植物检索</title>
  
 
 
 <div id="header">
+<div class="dropdown">
+  <span>菜单</span>
+  <div class="dropdown-content">
+    <p ><a href="http://www.iplant.cn/rep/protlist/9?page=2&p=内蒙古" target="_black">内蒙古保护植物️</a></p>
+	<p ><a href="http://www.cvh.ac.cn/tujie/" target="_black">形态术语</a></p>
+	<p ><a href="https://zhulezi.github.io/vegetationnotebook/diversity/" target="_black" >多样性计算</a></p>
+	<p ><a href="https://zhulezi.github.io/vegetationnotebook/lebook/" target="_black">lebook</a></p>
+	<p ><a href="https://zhulezi.github.io/vegetationnotebook/tree/" target="_black">可视化树</a></p>
+	<p ><a titel="听见蒙文" href="http://mtts.mglip.com/" target="_black">听见蒙文</a></p>
+	
+	
+  </div>
+</div>
+
+
 
 <p style="text-align:center">
-<a id="b1" href="http://www.cvh.ac.cn/tujie/" target="_black">📇</a>&nbsp;&nbsp
+
+
+<a id="b1" title="听见蒙文" href="http://mtts.mglip.com/" target="_black">🎧</a>&nbsp;&nbsp
+
 <font size="6"  style="font-weight:800;color:white;" > 内蒙古植物检索数据库</font>&nbsp;&nbsp
 <a id="b1" href="https://zhulezi.github.io/vegetationnotebook/" target="_black" >🔑</a>&nbsp;&nbsp
-<a id="b1" href="https://zhulezi.github.io/vegetationnotebook/diversity/" target="_black" >➕</a>&nbsp;&nbsp
-<a id="b1" href="https://zhulezi.github.io/vegetationnotebook/tree/" target="_black">🥦</a>&nbsp;&nbsp
-<a id="b1" href="https://zhulezi.github.io/vegetationnotebook/lebook/" target="_black">📖</a>
+<a id="b1" title="多样性计算" href="https://zhulezi.github.io/vegetationnotebook/diversity/" target="_black" >➕</a>&nbsp;&nbsp
+<a id="b1" title="tree" href="https://zhulezi.github.io/vegetationnotebook/tree/" target="_black">🥦</a>&nbsp;&nbsp
+<a id="b1" title="lebook" href="https://zhulezi.github.io/vegetationnotebook/lebook/" target="_black">📖</a>
 </p>
 </div>
 

@@ -1,7 +1,6 @@
 
 
 
-
 function format ( d ) {
     // `d` is the original data object for the row
 	
@@ -112,6 +111,8 @@ function format ( d ) {
 			'<a href="http://www.theplantlist.org/tpl1.1/search?q='+d.ld+ '" target="_black">'+ 'TPL' + '</a>' +
 			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
 			'<a href="http://www.tropicos.org/NameSearch.aspx?name='+d.ld+ '&commonname=" target="_black">'+ 'Tropicos' + '</a>' +
+			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
+			'<a href="http://plantsoftheworldonline.org/?q='+d.ld+ '" target="_black">'+ 'Kew' + '</a>' +
 			'</td>'+
 					
 				
@@ -155,7 +156,7 @@ function format ( d ) {
 '</div>'+
 '</div>'+
 '<div style="float:left">'+
-	'<textarea  rows="2" cols="9" style=" writing-mode: vertical-lr; font-family: Menksoft2012;direction: ltr; ">'
+	'<textarea  rows="2" cols="9" >'
 +d.mw+ '</textarea>'+
 	'</div>'
 
@@ -170,14 +171,28 @@ function format ( d ) {
 		'<tr>'+
 		'<td>🔎</td>'+
 		'<td>'+
-		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'<a href="../display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
 		'</td>'+
 	'</tr>'+
+		'<tr>'+
+             '<td>'+
+			 '<a href="http://www.theplantlist.org/tpl1.1/search?q='+d.ld+ '" target="_black">'+ 'TPL' + '</a>' +
+			
+			'</td>'+
+	
+            '<td>'+
+			'<a href="http://www.ipni.org/ipni/simplePlantNameSearch.do?find_wholeName='+d.ld+ '&output_format=normal&query_type=by_query&back_page=query_ipni.html" target="_black">'+ 'IPNI' + '</a>' +
+			
+			'</td>'+
+					
+				
+		'</tr>'+
+	
 		
     '</table>'+
 	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
 
-			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+			'<iframe  id="ifa" src="../display/'+d.sp+'.html"></iframe>'+
 
 '</div>'
 	;
@@ -188,9 +203,11 @@ function format ( d ) {
 	 { return '<table id="flo1" cellpadding="5" cellspacing="0" border="0" style="padding-left:0px;">'+
         '<tr>'+
             '<td>分布区类型:</td>'+
-            '<td>'+d.a+'</td>'+
+            '<td>'+
+		'<a href="../search/distribution.html#'   +d.a+ '" target="_black">'+ d.a + '</a>' +
+			'</td>'+
         '</tr>'+
-		/////行分割
+	
 		'<tr>'+
             '<td>分布区亚型:</td>'+
             '<td>'+d.b+'</td>'+
@@ -213,13 +230,27 @@ function format ( d ) {
 		'<tr>'+
 		'<td>🔎</td>'+
 		'<td>'+
-		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'<a href="../display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
 		'</td>'+
-	'</tr>'+
+	'</tr>'+	
+		'<tr>'+
+             '<td>'+
+			 '<a href="http://www.theplantlist.org/tpl1.1/search?q='+d.ld+ '" target="_black">'+ 'TPL' + '</a>' +
+			
+			'</td>'+
+	
+            '<td>'+
+			'<a href="http://www.ipni.org/ipni/simplePlantNameSearch.do?find_wholeName='+d.ld+ '&output_format=normal&query_type=by_query&back_page=query_ipni.html" target="_black">'+ 'IPNI' + '</a>' +
+			
+			'</td>'+
+					
+				
+		'</tr>'+
+	
     '</table>'+
 	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
 
-			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+			'<iframe  id="ifa" src="../display/'+d.sp+'.html"></iframe>'+
 
 '</div>'
 	;
@@ -230,19 +261,35 @@ function format ( d ) {
 	 { return '<table id="flo1" cellpadding="5" cellspacing="0" border="0" style="padding-left:0px;">'+
         '<tr>'+
             '<td>分布区类型:</td>'+
-            '<td>'+d.a+'</td>'+
+            '<td>'+
+			'<a href="../search/distribution.html#'   +d.a+ '" target="_black">'+ d.a + '</a>' +
+			'</td>'+
         '</tr>'+
 		'<tr>'+
 		'<td>🔎</td>'+
 		'<td>'+
-		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'<a href="../display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
 		'</td>'+
-	'</tr>'+
+	'</tr>'+	
+	'<tr>'+
+             '<td>'+
+			 '<a href="http://www.theplantlist.org/tpl1.1/search?q='+d.ld+ '" target="_black">'+ 'TPL' + '</a>' +
+			
+			'</td>'+
+	
+            '<td>'+
+			'<a href="http://www.ipni.org/ipni/simplePlantNameSearch.do?find_wholeName='+d.ld+ '&output_format=normal&query_type=by_query&back_page=query_ipni.html" target="_black">'+ 'IPNI' + '</a>' +
+			
+			'</td>'+
+					
+				
+		'</tr>'+
+	
 		
     '</table>'+
 	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
 
-			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+			'<iframe  id="ifa" src="../display/'+d.sp+'.html"></iframe>'+
 
 '</div>';
 	 
@@ -269,14 +316,14 @@ function format ( d ) {
 		'<tr>'+
 		'<td>🔎</td>'+
 		'<td>'+
-		'<a href="https://zhulezi.github.io/vegetationnotebook/display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
+		'<a href="../display/'   +d.sp+ '.html" target="_black">'+ '📝' + '</a>' +
 		'</td>'+
 	'</tr>'+
 		
     '</table>'+
 	'<div  style="float:right;overflow-x:hidden; overflow-y:auto;height:400px">'+
 
-			'<iframe  id="ifa" src="https://zhulezi.github.io/vegetationnotebook/display/'+d.sp+'.html"></iframe>'+
+			'<iframe  id="ifa" src="../display/'+d.sp+'.html"></iframe>'+
 
 '</div>';
 	 
@@ -334,6 +381,30 @@ function fot ( d ) {
 
 
 	 };
+	 if(d.bz == "属"|d.bz == "科")
+	 { return '<table   cellpadding="0" cellspacing="0" border="0" >'+
+        '<tr>'+
+            '<td>'+
+			'<div style="overflow:hidden;width:670px;height:570px;">'+
+			'<div style="margin:-423px -110px -480px -260px;">'+
+			//上、右、下、左
+			'<div style="margin-left: -200px;margin-top: -400px;margin-top: -400px">'+
+	        '<iframe src="http://www.cvh.ac.cn/searchmap/'+d.ld+'?n=1" ></iframe>'+
+			'</div>'+
+			'</div>'+
+			'</td>'+
+
+
+		'</tr>'+
+		
+
+    '</table>';
+	 
+
+
+
+	 };
+	
 
 };
 

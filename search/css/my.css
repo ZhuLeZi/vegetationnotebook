@@ -1,49 +1,10 @@
-
  
- 
-
-
-
-   
-.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-	
-   color: white !important;
-   border: 1px solid #27AE60;
-   background-color: #27AE60;
-   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #27AE60),
-    color-stop(100%, #27AE60));
-   /* Chrome,Safari4+ */
-   background: -webkit-linear-gradient(top, #27AE60 0%, #27AE60 100%);
-   /* Chrome10+,Safari5.1+ */
-   background: -moz-linear-gradient(top, #27AE60 0%,#27AE60 100%);
-   /* FF3.6+ */
-   background: -ms-linear-gradient(top, #27AE60 0%, #27AE60 100%);
-   /* IE10+ */
-   background: -o-linear-gradient(top, #27AE60 0%, #27AE60 100%);
-   /* Opera 11.10+ */
-   background: linear-gradient(to bottom, #27AE60 0%, #27AE60 100%);
-   /* W3C */
- }
- 
-
- 
- .dataTables_wrapper .dataTables_paginate .paginate_button:active {
-	
-   outline: none;
-   background-color:#27AE60 ;
+ a{ color:#008900;text-decoration: none
 
  }
  
  
-
-
-    
-
-   
- a{ color:#008900;text-decoration: none}
- a:hover{
-	 color:#FF7440;font-weight:bold
- }
+ a:hover{color:#FF7440;font-weight:bold}
  #b1{font-size:22px}
 #flo{float: right}
 #flo1{float: left}
@@ -51,6 +12,8 @@ img{height:30px}
 iframe{width:1250;height:3000;}
 
 #ifa{ width:1050;overflow-x:auto; overflow-y:auto;}
+
+
 th{background-color:#E6E6FF}
   #bb{
 border:8px solid;
@@ -58,7 +21,7 @@ border-radius:10px;
 border-color:#FF7440;} 
 
 #header {
-	line-height:10px;
+    line-height:10px;
     background-color:#27AE60;
     color:white;
     text-align:center;
@@ -74,8 +37,65 @@ border-color:#FF7440;}
 }
 
 
+
  .align_center {
             text-align: center;
         }
 
+
+
+
+ input{
+	                 height:30px;
+					 width:200px;
+                    right:5px; 
+					 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.075);
+                    }
+input:focus {
+	 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+
+.dropdown {
+  
+    position: absolute;
+    display: inline-block;
+    left:5px;   
+     background-color:#FF7440;
+      border: none;
+      font-size: 16px;
+      font-weight:bold;
+      margin: 20x;
+      padding: 20px 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+   left:1px; top:50px;
+    background-color: #7CC24F;
+    min-width: 200px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ .dropdown-content a {
+    color: white;
+    padding:5px 5px;
+    text-decoration: none;
+     font-size: 16px;
+    display: block;
+}
 	
+ .dropdown-content a:hover {
+    color:#FF7440;
+    text-decoration: none;
+     font-size: 16px;
+    display: block;
+}
+

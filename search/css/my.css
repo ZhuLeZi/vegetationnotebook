@@ -9,9 +9,9 @@
 #flo{float: right}
 #flo1{float: left}
 img{height:30px}
-iframe{width:1250;height:3000;}
+iframe{width:1250px;height:3000px;}
 
-#ifa{ width:1050;overflow-x:auto; overflow-y:auto;}
+#ifa{ width:1050px;height:395px; overflow-x:auto; overflow-y:auto;}
 
 
 th{background-color:#E6E6FF}
@@ -99,3 +99,36 @@ input:focus {
     display: block;
 }
 
+td.details-control {
+    background: url('../img/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+
+tr.shown td.details-control {
+    background: url('../img/details_close.png') no-repeat center center;
+}
+
+ td.picture {
+    background: url('../img/open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+
+tr.shown td.picture {
+    background: url('../img/close.png') no-repeat center center;
+}
+
+
+@font-face {
+      font-family: 'Menksoft2012';
+      src: url('../font/Menksoft2012.ttf');
+      src: url('../font/Menksoft2012.eot') format('truetype'),
+            url('../font/Menksoft2012.woff') format('woff');
+      
+    }
+	
+	
+div,body{margin: 0; padding: 0;}   
+	
+textarea{writing-mode: vertical-lr; font-family:Menksoft2012; direction: ltr;}

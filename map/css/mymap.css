@@ -1,0 +1,24 @@
+#nmg-map {width:900px; height: 600px;margin: 0px 20px;border-style:solid;
+  border-color:green;float:right}
+  
+  
+  #info{float:left ;margin-left:2px}
+  
+  input {
+    line-height: 34px;
+    left: 9px;
+    top: 0;
+    text-align: initial;
+    white-space: nowrap;
+    right: 9px;
+    height: 35px;
+    width: 94%;
+    padding: 0 3% 0 3%;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 1.2em;
+	border:2px solid green;
+}

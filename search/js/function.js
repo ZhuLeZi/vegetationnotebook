@@ -1,4 +1,9 @@
+function map(d){
+	
+	$.getJSON("http://www.sp2000.org.cn/api/taxon/scientificName/taxonID/"+"d.ld" +"/5b8b4dcb78874e95914227b016aa0b65", function(json){
 
+});
+}
 
 
 function format ( d ) {
@@ -97,7 +102,6 @@ function format ( d ) {
 			'<a href="https://www.gbif.org/occurrence/search?q=' +d.ld+'" target="_black">'+ 'GBIF' + '</a>' +
 			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
 			
-		
 			
 			'</td>'+	
 		'</tr>'+
@@ -106,6 +110,8 @@ function format ( d ) {
             '<td>名称索引:</td>'+
 	
             '<td>'+
+			'<a href="http://www.cfh.ac.cn/Spdb/spsearch.aspx?aname=' +d.ld+'" target="_black">'+ 'CFH' + '</a>' +
+			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
 			'<a href="http://www.ipni.org/ipni/simplePlantNameSearch.do?find_wholeName='+d.ld+ '&output_format=normal&query_type=by_query&back_page=query_ipni.html" target="_black">'+ 'IPNI' + '</a>' +
 			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
 			'<a href="http://www.theplantlist.org/tpl1.1/search?q='+d.ld+ '" target="_black">'+ 'TPL' + '</a>' +
@@ -113,10 +119,14 @@ function format ( d ) {
 			'<a href="http://www.tropicos.org/NameSearch.aspx?name='+d.ld+ '&commonname=" target="_black">'+ 'Tropicos' + '</a>' +
 			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
 			'<a href="http://plantsoftheworldonline.org/?q='+d.ld+ '" target="_black">'+ 'Kew' + '</a>' +
-			'</td>'+
+		
+			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
+			'<a href="http://www.sp2000.org.cn/pageservices/species/scientificName/'+d.ld +'/zh" target="_blank">'+ 'SP2000'+ '</a>'+
+				'</td>'+
+			
 					
-				
-		'</tr>'+
+				'</tr>'+
+	
 		
 		'<tr>'+
             '<td>图片:</td>'+
@@ -151,7 +161,7 @@ function format ( d ) {
 	
 	
 '<div  style="float:right;overflow:hidden;width:250px;height:500px;">'+
-'<div  style="margin:-250px -400px -280px -25px;">'+
+'<div  style="margin:-370px -400px -280px -25px;">'+
 			'<iframe src="http://www.iplant.cn/info/'+d.ld+'"></iframe>'+
 '</div>'+
 '</div>'+
@@ -303,9 +313,37 @@ function format ( d ) {
             '<td>'+d.bz+'</td>'+
         '</tr>'+
 		
+		
+		'<tr>'+
+		  '<td>'+
+			'<a href="http://www.bhl-china.org/bhl/zaipei" target="_black">️BHL栽培植物名录</a>'+
+			'</td>'+
+		 '</tr>'+
+		
+		
+		
+		
     '</table>';
 	 
 	 };
+	 
+	 
+	  if(d.bz == "入侵")
+	 { return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:10px;">'+
+        '<tr>'+
+            '<td>备注:</td>'+
+            '<td>'+d.bz+'</td>'+
+        '</tr>'+
+		
+		 '<tr>'+
+		  '<td>'+
+			'<a href="http://www.iplant.cn/ias/protlist" target="_black">️中国入侵植物名录</a>'+
+			'</td>'+
+		 '</tr>'+
+    '</table>';
+	 
+	 };
+	 
 	 
 	  if(d.bz == "门")
 	 { return '<table id="flo1" cellpadding="5" cellspacing="0" border="0" style="padding-left:0px;">'+

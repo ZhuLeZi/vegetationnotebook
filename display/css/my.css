@@ -2,7 +2,7 @@
 
   h2{color:green} 
  a{ background-color:green ;color:white;text-decoration: none;font-size:17px;
- border: solid 2px green;padding: 3px 10px;
+ border: solid 2px green;padding: 2px 8px;
  }
  a:hover{
 	background-color:#FF7440;font-weight:bold
@@ -23,4 +23,4 @@ font{color:#FF7440}
 
 
 
-body{margin: 10 10 5 20;}
+body{margin: 10 10 5 20; }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+        <title>地图</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="js/echarts.min.js"></script>
+        <script src="js/nmg.js"></script>
+		
+  <link rel="stylesheet" type="text/css" href="css/mymap.css"> 
+    </head>
+    <body>        
+
+<div id="info">
+<h1>内蒙古植物分布查询</h1>
+<input placeholder="请输入植物拉丁名">
+</div>
+ <div id="nmg-map"></div>
+        
+
+		 <script>				
+						var sp=[
+                        {name:'苏尼特左旗', 
+						selected:true},
+						 {name:'五原县', selected:true}//内蒙古为选中状态
+                    ]
+		 </script>
+		 
+		
+	<script src="js/mymap.js"></script>
+        
+    </body>
+</html>

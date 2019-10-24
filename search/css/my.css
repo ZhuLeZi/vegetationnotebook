@@ -22,13 +22,13 @@ border-color:#FF7440;}
 
 #header {
     line-height:10px;
-    background-color:#27AE60;
+    background-color:#4ACA6D;
     color:white;
     text-align:center;
     padding:1px;
 }
 #footer {
-    background-color:#27AE60;
+    background-color:#4ACA6D;
     color:white;
     clear:both;
     text-align:center;
@@ -129,6 +129,6 @@ tr.shown td.picture {
     }
 	
 	
-div,body{margin: 0; padding: 0;}   
+div,body{margin: 0; padding: 0;font-size:16px}   
 	
 textarea{writing-mode: vertical-lr; font-family:Menksoft2012; direction: ltr;}

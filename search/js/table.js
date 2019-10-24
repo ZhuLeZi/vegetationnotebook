@@ -8,6 +8,34 @@ $(document).ready(function() {
         $('.dataTables_filter input').attr({'name':'search','placeholder': '请输入植物名'});//提示
     },
 		
+		"fnRowCallback": function( nRow, data, iDisplayIndex, iDisplayIndexFull ) { 
+                	//改行满足的条件
+                	//var state = data.bz;
+                	if(data.bz != ""){
+                		//设置满足条件图片行的背景颜色，分布地图
+                		$('td.picture',nRow).css("background", "white");
+                	
+                    };
+					if(data.bz != ""){
+                		//设置满足条件图片行的背景颜色ppbc
+                		$('td.photo',nRow).css("color", "white");
+                	
+                    };
+                    
+                    if(data.bz == "栽培"){
+                		//设置满足条件行的字体颜色
+                		
+                		$(nRow).css("color","brown");
+                	};
+					if(data.bz == "合并"){
+                		//设置满足条件行的字体颜色
+                		
+                		$("a",nRow).css("background", "#FF9966");
+                	};
+                },
+
+               
+		
 		
 		"ordering":true, 
             "bSort" : true, 		
@@ -29,7 +57,13 @@ $(document).ready(function() {
 		
 		   {"orderable": false, "data" : 'sp',render: function(data, type, row) { return '<a href="http://frps.iplant.cn/frps?id='+data+'" target="_black">' + data + '</a>';} },
 		   {"data" : 'ld',render: function(data, type, row) { return '<a href="http://foc.iplant.cn/search.aspx?k='   +data+'&id=1'+ '" target="_black">'+ data + '</a>';}},
-           {"orderable": false, "data": 'js',"className":"align_center"}, 
+
+
+            {"class":"photo",
+			"data" : 'ld',render: function(data, type, row) { return '<a href="http://ppbc.iplant.cn/list?latin='   +data+ '" target="_black">'+ "+" + '</a>';}},
+
+
+		  {"orderable": false, "data": 'js',"className":"align_center"}, 
 		   {"orderable": false, "data": 'fb'},
       
       { "class":"picture",
@@ -104,6 +138,9 @@ $(document).ready(function() {
 		
 		
     } );
+	
+	
+
 	
 } );
 

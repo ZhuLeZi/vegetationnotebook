@@ -2900,14 +2900,14 @@ var data =
   },
   {
     "sp": "变蒿",
-    "ld": "柔毛蒿",
+    "ld": "Artemisia commutate",
     "js": "261",
     "fb": "552",
     "a": "多年生草本",
     "b": "原地面芽植物",
     "c": "旱生",
     "d": "古北极分布种",
-    "bz": "合并",
+    "bz": "",
     "y": "",
     "key": "",
     "mw": ""
@@ -8108,7 +8108,7 @@ var data =
   },
   {
     "sp": "菊属",
-    "ld": "Dendranthema",
+    "ld": "Chrysanthemum",
     "js": "240、250、252、265",
     "fb": "510、527、530",
     "a": "10(14)",
@@ -12434,9 +12434,9 @@ var data =
   },
   {
     "sp": "麦瓶草属",
-    "ld": "Pleconax",
-    "js": "58、65",
-    "fb": "127、143",
+    "ld": "Silene",
+    "js": '⁉️  58、65  <a href="http://frps.iplant.cn/frps/Silene" target=/"_black/" >'+'FRPS：蝇子草属'+'</a>',
+    "fb": '⁉️  127、143  <a href="http://foc.iplant.cn/content.aspx?TaxonId=130349" target=/"_black/" >'+'FOC：蝇子草属'+'</a>',
     "a": "",
     "b": "",
     "c": "",
@@ -12953,7 +12953,7 @@ var data =
   {
     "sp": "燥原荠属",
     "ld": "Ptilotrichum",
-    "js": "87、91、94",
+    "js": '⁉️ 87、91、94  <a href="http://foc.iplant.cn/search.aspx?k=Alyssum&id=1" target=/"_black/" >'+'FOC：葶芥属'+'</a>',
     "fb": "195、197、205",
     "a": "",
     "b": "",
@@ -14479,7 +14479,7 @@ var data =
   {
     "sp": "小苦苣菜属",
     "ld": "Sonchella",
-    "js": "241、277、281",
+    "js": '💛   241、277、281  <a href="http://www.efloras.org/browse.aspx?flora_id=2&name_str=Sonchella&btnSearch=Search" target=/"_black/" >'+'eflora'+'</a>',
     "fb": "595",
     "a": "",
     "b": "",
@@ -16259,6 +16259,19 @@ var data =
     "ld": "香花芥属",
     "js": "99",
     "fb": "217",
+    "a": "10",
+    "b": "",
+    "c": "25",
+    "d": "2（1）",
+    "bz": "合并",
+    "y": "510",
+    "key": "",
+    "mw": ""
+  }, {
+    "sp": "兴安胡枝子",
+    "ld": "达乌里胡枝子",
+    "js": "145",
+    "fb": "318、319",
     "a": "10",
     "b": "",
     "c": "25",
@@ -21493,8 +21506,8 @@ var data =
   {
     "sp": "细茎黄鹌菜",
     "ld": "Youngia akagii",
-    "js": "281",
-    "fb": "596",
+    "js": '⁉️  281  <a href="http://frps.iplant.cn/frps?id=叉枝黄鹌" target=/"_black/" >'+'FRPS：叉枝黄鹌（Youngia tenuicaulis）'+'</a>',
+    "fb": '⁉️  596  <a href="http://frps.iplant.cn/frps?id=叉枝黄鹌" target=/"_black/" >'+'FOC：叉枝假还阳参（ Crepidiastrum akagii）'+'</a>',
     "a": "多年生草本",
     "b": "原地面芽植物",
     "c": "旱中生",
@@ -25090,8 +25103,8 @@ var data =
   },
   {
     "sp": "戈壁针茅",
-    "ld": "Stipa tianschanica var. gobica",
-    "js": "314",
+    "ld": "Stipa gobica",
+    "js": '⁉️  314 <a href="http://foc.iplant.cn/search.aspx?k=Stipa tianschanica var. gobica&id=1" target=/"_black/" >'+'FOC：Stipa tianschanica var. gobica'+'</a>',
     "fb": "660、662",
     "a": "多年生草本",
     "b": "原地面芽植物",
@@ -25175,8 +25188,8 @@ var data =
   {
     "sp": "克氏针茅",
     "ld": "Stipa krylovii",
-    "js": "314",
-    "fb": "660、661",
+    "js": '⁉️  314 <a href="http://frps.iplant.cn/frps/Stipa sareptana var. krylovii" target=/"_black/" >'+'FRPS：西北针茅变种'+'</a>',
+    "fb": '⁉️  660、661  <a href="http://foc.iplant.cn/search.aspx?k=Stipa sareptana var. krylovii&id=1" target=/"_black/" >'+'FOC：Stipa sareptana var. krylovii'+'</a>',
     "a": "多年生草本",
     "b": "原地面芽植物",
     "c": "旱生",
@@ -25245,7 +25258,7 @@ var data =
   {
     "sp": "贝加尔针茅",
     "ld": "Stipa baicalensis",
-    "js": "313",
+    "js": '⁉️  313  <a href="http://frps.iplant.cn/frps/Stipa baicalensis" target=/"_black/" >'+'FRPS：狼针草'+'</a>',
     "fb": "660",
     "a": "多年生草本",
     "b": "原地面芽植物",
@@ -25328,7 +25341,7 @@ var data =
   },
   {
     "sp": "紫筒草",
-    "ld": "Stenosolenium saxatiles",
+    "ld": "Stenosolenium saxatile",
     "js": "193",
     "fb": "422",
     "a": "多年生草本",
@@ -26435,7 +26448,7 @@ var data =
   {
     "sp": "苣荬菜",
     "ld": "Sonchus arvensis",
-    "js": "280",
+    "js": "280  ",
     "fb": "592",
     "a": "多年生草本",
     "b": "地下芽植物",
@@ -26449,7 +26462,7 @@ var data =
   {
     "sp": "碱小苦苣菜",
     "ld": "Sonchella stenoma",
-    "js": "281",
+    "js": '💛  281  <a href="http://www.efloras.org/browse.aspx?flora_id=2&name_str=Sonchella%20stenoma" target=/"_black/" >'+'eflora'+'</a>',
     "fb": "595",
     "a": "多年生草本",
     "b": "原地面芽植物",
@@ -38517,8 +38530,8 @@ var data =
   {
     "sp": "扁蓿豆",
     "ld": "Melilotoides ruthenica",
-    "js": "124、141",
-    "fb": "311",
+    "js": '⁉️  124、141  <a href="http://frps.iplant.cn/frps?id=花苜蓿" target=/"_black/" >'+'FRPS：花苜蓿'+'</a>',
+    "fb": '⁉️  311  <a href="http://foc.iplant.cn/search.aspx?k=Medicago%20ruthenica&id=1" target=/"_black/" >'+'FOC：Medicago ruthenica'+'</a>',
     "a": "多年生草本",
     "b": "原地面芽植物",
     "c": "中旱生",
@@ -40267,9 +40280,9 @@ var data =
   {
     "sp": "达乌里胡枝子",
     "ld": "Lespedeza davurica",
-    "js": "145",
+    "js": "144",
     "fb": "318、319",
-    "a": "多年生草本",
+    "a": "小半灌木",
     "b": "原地面芽植物",
     "c": "中旱生",
     "d": "东古北极分布种",
@@ -41776,11 +41789,11 @@ var data =
     "key": "",
     "mw": "ᠲᠤᠷᠤᠭ ᠭᠠᠰᠢᠭᠤᠨ ᠨᠣᠭᠣᠭ᠎ᠠ"
   },
-  {
+    {
     "sp": "抱茎苦荬菜",
     "ld": "Ixeris sonchifolia",
-    "js": "282",
-    "fb": "598、599",
+    "js": '⁉️  282 <a href="http://foc.iplant.cn/search.aspx?k=尖裂假还阳参&id=3" target=/"_black/" >'+'FOC：尖裂假还阳参（Crepidiastrum sonchifolium）'+'</a>',
+    "fb": "⁉️  598、599  FRPS：未记载",
     "a": "多年生草本",
     "b": "原地面芽植物",
     "c": "中生",
@@ -45320,7 +45333,7 @@ var data =
   },
   {
     "sp": "糖芥",
-    "ld": "Erysimum bungei",
+    "ld": "Erysimum amurense",
     "js": "100",
     "fb": "219",
     "a": "多年生草本",
@@ -47042,8 +47055,8 @@ var data =
   },
   {
     "sp": "异蕊芥",
-    "ld": "Dimorphostemon pinnatus",
-    "js": "99",
+    "ld": "Dimorphostemon pinnatifidus",
+    "js": '⁉️  99  <a href="http://foc.iplant.cn/search.aspx?id=1&k=Dontostemon%20pinnatifidus" target=/"_black/" >'+'FRPS：羽裂花旗杆（Dontostemon pinnatifidus 	）'+'</a>',
     "fb": "215",
     "a": "一年生草本",
     "b": "一年生植物",
@@ -47448,7 +47461,7 @@ var data =
   },
   {
     "sp": "紫花野菊",
-    "ld": "Dendranthema zawadskii",
+    "ld": "Chrysanthemum zawadskii",
     "js": "253",
     "fb": "530、531",
     "a": "多年生草本",
@@ -47462,7 +47475,7 @@ var data =
   },
   {
     "sp": "小山菊",
-    "ld": "Dendranthema oreastrum",
+    "ld": "Chrysanthemum oreastrum",
     "js": "253",
     "fb": "530、531",
     "a": "多年生草本",
@@ -47476,7 +47489,7 @@ var data =
   },
   {
     "sp": "楔叶菊",
-    "ld": "Dendranthema naktongense",
+    "ld": "Chrysanthemum naktongense",
     "js": "252",
     "fb": "530、531",
     "a": "多年生草本",
@@ -47490,7 +47503,7 @@ var data =
   },
   {
     "sp": "蒙菊",
-    "ld": "Dendranthema mongolicum",
+    "ld": "Chrysanthemum mongolicum",
     "js": "253",
     "fb": "530、532",
     "a": "多年生草本",
@@ -47504,7 +47517,7 @@ var data =
   },
   {
     "sp": "细叶菊",
-    "ld": "Dendranthema maximowiczii",
+    "ld": "Chrysanthemum maximowiczii",
     "js": "253",
     "fb": "530、531",
     "a": "多年生草本",
@@ -47518,7 +47531,7 @@ var data =
   },
   {
     "sp": "甘菊",
-    "ld": "Dendranthema lavandulifolium",
+    "ld": "Chrysanthemum lavandulifolium",
     "js": "252",
     "fb": "530",
     "a": "多年生草本",
@@ -47532,7 +47545,7 @@ var data =
   },
   {
     "sp": "野菊",
-    "ld": "Dendranthema indicum",
+    "ld": "Chrysanthemum indicum",
     "js": "252",
     "fb": "530",
     "a": "多年生草本",
@@ -47546,7 +47559,7 @@ var data =
   },
   {
     "sp": "小红菊",
-    "ld": "Dendranthema chanetii",
+    "ld": "Chrysanthemum chanetii",
     "js": "252",
     "fb": "530、531",
     "a": "多年生草本",
@@ -50669,7 +50682,7 @@ var data =
   {
     "sp": "矮藜",
     "ld": "Chenopodium minimum",
-    "js": "55",
+    "js": "❤️  55",
     "fb": "123、124",
     "a": "一年生草本",
     "b": "一年生植物",
@@ -51200,7 +51213,7 @@ var data =
   },
   {
     "sp": "蒙古莸",
-    "ld": "Caryopteris mongholia",
+    "ld": "Caryopteris mongholica",
     "js": "197",
     "fb": "431",
     "a": "半灌木",
@@ -52068,7 +52081,7 @@ var data =
   },
   {
     "sp": "黄囊薹草",
-    "ld": "Carex korshinskyi",
+    "ld": "Carex korshinskii",
     "js": "335",
     "fb": "696、710",
     "a": "多年生草本",
@@ -52181,7 +52194,7 @@ var data =
   {
     "sp": "和林薹草",
     "ld": "Carex helingeeriensis",
-    "js": "333",
+    "js": "❤️ 333",
     "fb": "",
     "a": "多年生草本",
     "b": "地下芽植物",
@@ -52894,9 +52907,9 @@ var data =
   },
   {
     "sp": "窄叶锦鸡儿",
-    "ld": "Caragana pygmaea var.angustissima",
-    "js": "137",
-    "fb": "299、301",
+    "ld": "Caragana pygmaea var. angustissima",
+    "js": '⁉️  137 <a href="http://frps.iplant.cn/frps/Caragana pygmaea var. angustissima" target=/"_black/" >'+'FRPS：窄叶矮锦鸡儿'+'</a>',
+    "fb": " 299、301",
     "a": "灌木",
     "b": "矮高位芽植物",
     "c": "强旱生",
@@ -53482,7 +53495,7 @@ var data =
   },
   {
     "sp": "假苇拂子茅",
-    "ld": "Calamagrostis pseudaphragmites",
+    "ld": "Calamagrostis pseudophragmites",
     "js": "311",
     "fb": "655",
     "a": "多年生草本",
@@ -56717,8 +56730,8 @@ var data =
   {
     "sp": "褐沙蒿",
     "ld": "Artemisia intramongolica",
-    "js": "261",
-    "fb": "540、551",
+    "js": '⁉️  261  <a href="http://frps.iplant.cn/frps/Artemisia%20halodendron" target=/"_black/" >'+'FRPS：盐蒿'+'</a>',
+    "fb": '⁉️  540、551  <a href="http://foc.iplant.cn/search.aspx?k=Artemisia%20halodendron&id=1" target=/"_black/" >'+'FOC：Artemisia halodendron'+'</a>',
     "a": "半灌木",
     "b": "半灌木地上芽植物",
     "c": "旱生",
@@ -56728,6 +56741,7 @@ var data =
     "key": "3120712",
     "mw": "ᠬᠦᠷᠡᠩ ᠰᠢᠪᠠᠭ"
   },
+  
   {
     "sp": "柳叶蒿",
     "ld": "Artemisia integrifolia",
@@ -58788,7 +58802,7 @@ var data =
   },
   {
     "sp": "黄花葱",
-    "ld": "Allium chysanthum",
+    "ld": "Allium condensatum",
     "js": "344",
     "fb": "723、728",
     "a": "多年生草本",
@@ -60483,7 +60497,7 @@ var data =
   {
     "sp": "针喙芥",
     "ld": "Acirostrum alaschanicum",
-    "js": "99",
+    "js": "❤️   99",
     "fb": "216",
     "a": "多年生草本",
     "b": "原地面芽植物",
@@ -60903,7 +60917,7 @@ var data =
   {
     "sp": "驴欺口",
     "ld": "Echinops davuricus",
-    "js": "267",
+    "js":'⁉️  267  <a href="http://frps.iplant.cn/frps/Echinops%20latifolius" target=/"_black/" >'+'FRPS：Echinops latifolius'+'</a>',
     "fb": "565",
     "a": "多年生草本",
     "b": "原地面芽植物",

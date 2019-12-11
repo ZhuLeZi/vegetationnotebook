@@ -16,21 +16,18 @@ $(document).ready(function() {
                 		$('td.picture',nRow).css("background", "white");
                 	
                     };
-					if(data.bz != ""){
-                		//设置满足条件图片行的背景颜色ppbc
-                		$('td.photo',nRow).css("color", "white");
-                	
-                    };
+					
                     
-                    if(data.bz == "栽培"){
-                		//设置满足条件行的字体颜色
-                		
+					
+					
+                   if ( data.bz in { '栽培':'', '合并':'' } ){
+                		//多条件格式
                 		$(nRow).css("color","brown");
                 	};
 					if(data.bz == "合并"){
-                		//设置满足条件行的字体颜色
+                		//设置满足条件行的a标签 颜色
                 		
-                		$("a",nRow).css("background", "#FF9966");
+                		$("a",nRow).css("color", "grey");
                 	};
                 },
 
@@ -55,16 +52,17 @@ $(document).ready(function() {
 		 
 		  },
 		
-		   {"orderable": false, "data" : 'sp',render: function(data, type, row) { return '<a href="http://frps.iplant.cn/frps?id='+data+'" target="_black">' + data + '</a>';} },
-		   {"data" : 'ld',render: function(data, type, row) { return '<a href="http://foc.iplant.cn/search.aspx?k='   +data+'&id=1'+ '" target="_black">'+ data + '</a>';}},
+		   {"orderable": false, "data" : 'sp',render: function(data, type, row){ return '<a href="http://www.iplant.cn/info/'   +data+'?t=z'+ '" target="_black">'+ data + '</a>';}},
+		   {"data" : 'ld',render: function(data, type, row) { return '<a href="http://www.iplant.cn/info/'   +data+'?t=foc'+ '" target="_black">'+ data + '</a>';}},
 
 
             {"class":"photo",
 			"data" : 'ld',render: function(data, type, row) { return '<a href="http://ppbc.iplant.cn/list?latin='   +data+ '" target="_black">'+ "+" + '</a>';}},
+ {
+			"data" : 'ld',render: function(data, type, row) { return '<a href="http://ppbc.iplant.cn/list?latin='   +data+ '&tag=%E8%8A%B1%2C" target="_black">'+ "💮" + '</a>';}},
 
-
-		  {"orderable": false, "data": 'js',"className":"align_center"}, 
-		   {"orderable": false, "data": 'fb'},
+		  {"orderable": true, "data": 'js',"className":"align_center"}, 
+		   {"orderable": true, "data": 'fb'},
       
       { "class":"picture",
 		   "orderable": false, 

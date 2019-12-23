@@ -17,29 +17,17 @@ function format ( d ) {
             '<td>生长型:</td>'+
             '<td>'+d.a+
 			'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp'+
-			//'<a href="http://p.eflora.cn/bkgettezheng.ashx?latin='+d.ld+'" target="_black" >'+'性状'+'</a>'+
+		
 			'</td>'+
 			
-			//'<td>'+
-            //'<iframe src="http://p.eflora.cn/bkgettezheng.ashx?latin='+d.ld+'"style="width:200px;height:200px; ></iframe>'+
-		   // '</td>'+
-			//'<td>'+
-			//'<iframe src="http://p.eflora.cn/bkgettezhengJsonfen.ashx?latin='+d.ld+' &type=%E6%A0%AA "style="width:200px;height:200px; ></iframe>'+
+	
         '</tr>'+
 		
 		'<tr>'+
             '<td>生活型:</td>'+
             '<td>'+d.b+'</td>'+
 			
-			//'<div style="overflow:hidden;width:500px;height:35px;">'+
-			//'<div style="margin:-0px -0px -0px -2px;">'+
-			//上、右、下、左
 		
-			//'<iframe src="http://frps.iplant.cn/getspdescorsub.ashx?l='+d.ld+'&t=b" ></iframe>'+
-			//'</div>'+
-		    //'</div>'+
-
-
 
 		'</tr>'+
 		
@@ -161,7 +149,7 @@ function format ( d ) {
 	
 	
 '<div  style="float:right;overflow:hidden;width:250px;height:500px;">'+
-'<div  style="margin:-370px -400px -280px -25px;">'+
+'<div  style="margin:-370px -400px -250px -8px;">'+
 			'<iframe src="http://www.iplant.cn/info/'+d.ld+'"></iframe>'+
 '</div>'+
 '</div>'+
